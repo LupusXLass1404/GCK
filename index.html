@@ -32,348 +32,436 @@
 
 <body>
     <div id="text" style="background-color:#3D3D3D; color:#EEEEEE;">
-        <br /><br />기본 공격
-        <br /><br />엑스 레스큐
-        <br />지정 방향 적에게 범위 피해를 입히고, 파티 영웅을 회복시킨다.
-        <br />[c][F7ACA5]#범위공격[-][/c] [c][74DBBC]#생명력 회복[-][/c]
-        <br />[c][F7ACA5]지정 방향의 적에게 마법 공격력의 [@DMG]ID:284505012[@DMG]피해[-][/c]를 입힌다.<br>[c][74DBBC]파티 영웅의 생명력을 마법 공격력의
-        [@DMG]ID:284506012[@DMG]만큼 회복[-][/c]시키고 [c][74DBBC][@BUFF_TIME]ID:2845005[@BUFF_TIME]초간 다음 효과를 부여[-][/c]한다.<br>-
-        [c][74DBBC]주는 피해 [@BUFF]Category:eStat,ID:284500501,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]스킬 Sp소모량
-        [@BUFF]Category:eProperty,ID:284500533,Percent:true[@BUFF]감소[-][/c]
-        <br /><br />바이탈 테러
-        <br />지정 범위 파티 영웅을 지속적으로 회복시킨다.
-        <br />[c][74DBBC]#생명력 회복[-][/c]
-        <br />[c][74DBBC]지정 범위의 파티 영웅의 생명력을 마법 공격력의 [@DMG]ID:284508012[@DMG]만큼 회복[-][/c]시키고, 회복된 파티 영웅을
-        [c][74DBBC][@BUFF_TIME]ID:2845006[@BUFF_TIME]초간 매초 대상 최대 생명력의
-        [@BUFF]Category:eDot,ID:284500611,Percent:true[@BUFF]만큼 추가 회복[-][/c]시킨다.
-        <br /><br />퍼펙트 히트
-        <br />지정 범위 파티 영웅을 회복시키고, 피해량을 증가시킨다.
-        <br />[c][74DBBC]#생명력 회복[-][/c] [c][74DBBC]#파티강화[-][/c]
-        <br />[c][74DBBC]자신을 제외한 지정 범위의 파티 전체의 생명력을 마법 공격력의 [@DMG]ID:284509012[@DMG]만큼 회복[-][/c]시킨다.<br>회복된 파티 영웅은
-        [c][74DBBC]마법형 적에게 주는 피해가 [@BUFF_TIME]ID:2845007[@BUFF_TIME]초간
-        [@BUFF]Category:eStat,ID:284500701,Percent:true[@BUFF]증가[-][/c]하고 [c][74DBBC]모든 자원 획득량이
-        [@BUFF_TIME]ID:2845048[@BUFF_TIME]초간 [@BUFF]Category:eStat,ID:284504801,Percent:true[@BUFF]증가[-][/c]한다.
-        <br /><br />대미지 클리어링
-        <br />모든 파티 영웅을 회복시키고, 일정 시간동안 받는 해로운 효과를 무효화시킨다.
-        <br />[c][74DBBC]모든 파티 영웅의 생명력을 마법 공격력의 [@DMG]ID:284511012[@DMG]만큼 회복[-][/c]시키고
-        [c][74DBBC][@BUFF_TIME]ID:2845008[@BUFF_TIME]초간 받는 해로운 효과를 무효화[-][/c]시킨다.
-        <br /><br />기억의 각인
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501531,Percent:true[@BUFF]증가[-][/c]한다.
-        <br /><br />[각인] 엑스 레스큐
-        <br />지정 방향 적에게 범위 피해를 입히고, 조율 속성 파티 영웅에게 주는 피해를 감소시킨다.
-        <br />[c][F7ACA5]#범위공격[-][/c] [c][74DBBC]#파티보호[-][/c]
-        <br />[c][EEEEEE]'엑스 레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c]
-        입힌다. [c][F7ACA5]피해를 입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티
-        영웅에게 주는 모든 피해가 [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.
-        <br /><br />[각인] 바이탈 테러
-        <br />지정 범위 파티 영웅을 지속적으로 회복시킨다.
-        <br />[c][74DBBC]파티 영웅의 생명력을 마법 공격력의
-        [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼 나눠서
-        회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br /><br />[각인] 대미지 클리어링
-        <br />모든 파티 영웅을 회복시키고, 일정 시간동안 받는 해로운 효과를 무효화시킨다.
-        <br />[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어 모든 [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 적이[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성에게 받는 피해를 [@BUFF_TIME]ID:2845030[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503031,Percent:true[@BUFF]증가[-][/c]시킨다.
-        <br /><br /><br /><br />
-        <br /><br />어시스트
-        <br />적에게 피해를 20회 입힌 파티 영웅에게 '서포트 타임'을 부여한다.
-        <br />[c][74DBBC]스킬 사용 시 2초에 걸쳐 파티 영웅의 수X[@BUFF]Category:eProperty,ID:284500131,Percent:false[@BUFF]sp를 2회
-        획득[-][/c]한다. (재사용 3초)<br>[c][F7ACA5]적에게 피해를 20회 입힌 파티 영웅[-][/c]은
-        [c][74DBBC][@BUFF_TIME]ID:2845003[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]이
-        부여[-][/c]된다.<br><br>[c][7CC6FF][서포트 타임][-][/c]<br>- [c][74DBBC]최대 생명력의
-        [@BUFF]Category:eShield,ID:284500351,Percent:true[@BUFF]지워지지 않는 보호막 부여[-][/c]<br>- [c][74DBBC]스킬 재사용 시간
-        [@BUFF]Category:eStat,ID:284500401,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]치명타 확률
-        [@BUFF]Category:eStat,ID:284500402,Percent:true[@BUFF]증가[-][/c]
-        <br /><br /><br /><br />
-        <br /><br />[강화I] 대미지 클리어링
-        <br /><br />[강화I] 대미지 클리어링
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][7CC6FF]근접한 적이 4명 이상일 때, '조율'속성 파티 영웅이 주는 체이서 피해가
-        [@BUFF]Category:eProperty,ID:284500931,Percent:true[@BUFF]증가한다.[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]모든 파티 영웅의 생명력을 마법 공격력의 [@DMG]ID:284511012[@DMG]만큼 회복[-][/c]시키고
-        [c][74DBBC][@BUFF_TIME]ID:2845008[@BUFF_TIME]초간 받는 해로운 효과를 무효화[-][/c]시킨다.
-        <br /><br />[강화II] 대미지 클리어링
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][7CC6FF]근접한 적이 4명 이상일 때, '조율'속성 파티 영웅이 주는 체이서 피해가
-        [@BUFF]Category:eProperty,ID:284500931,Percent:true[@BUFF]증가한다.[-][/c]<br>[c][7CC6FF]'서포트 타임'의 효과가 강화되어 주는 최종
-        피해를
-        [@BUFF]Category:eStat,ID:284501101,Percent:true[@BUFF]증가시킨다.[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]모든
-        파티 영웅의 생명력을 마법 공격력의 [@DMG]ID:284511012[@DMG]만큼 회복[-][/c]시키고 [c][74DBBC][@BUFF_TIME]ID:2845008[@BUFF_TIME]초간 받는
-        해로운 효과를 무효화[-][/c]시킨다.<br>[c][7CC6FF]파티 '조율'속성 영웅은 [@BUFF_TIME]ID:2845050[@BUFF_TIME]초간 수호형에게 주는 피해가
-        [@BUFF]Category:eStat,ID:284505001,Percent:true[@BUFF]증가한다.[-][/c]
-        <br /><br /><br /><br />
-        <br /><br />기억의 각인
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]파티 영웅이 받는 보호막량이
-        [@BUFF]Category:eStat,ID:284501301,Percent:true[@BUFF], 보호막이 있는 대상에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501332,Percent:true[@BUFF]증가[-][/c]한다.<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성
-        적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501631,Percent:true[@BUFF]증가[-][/c]한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]파티 영웅이 받는 보호막량이
-        [@BUFF]Category:eStat,ID:284501301,Percent:true[@BUFF], 보호막이 있는 대상에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501332,Percent:true[@BUFF]증가[-][/c]한다.<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성
-        적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501631,Percent:true[@BUFF]증가[-][/c]한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]파티 영웅이 받는 보호막량이
-        [@BUFF]Category:eStat,ID:284501301,Percent:true[@BUFF], 보호막이 있는 대상에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501332,Percent:true[@BUFF]증가[-][/c]한다.<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성
-        적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501631,Percent:true[@BUFF]증가[-][/c]한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]파티 영웅이 받는 보호막량이
-        [@BUFF]Category:eStat,ID:284501301,Percent:true[@BUFF], 보호막이 있는 대상에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501332,Percent:true[@BUFF]증가[-][/c]한다.<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성
-        적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501631,Percent:true[@BUFF]증가[-][/c]한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]파티 영웅이 받는 보호막량이
-        [@BUFF]Category:eStat,ID:284501301,Percent:true[@BUFF], 보호막이 있는 대상에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501332,Percent:true[@BUFF]증가[-][/c]한다.<br>[c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성
-        적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501231,Percent:true[@BUFF]감소[-][/c]한다.<br><br>[c][7CC6FF][각인][-][/c]<br>능력 강화 :
-        [c][74DBBC]생명력+[@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF],
-        마법공격력+[@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF],
-        물리방어력+[@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF],
-        마법방어력+[@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]<br>[c][EEEEEE]'서포트 타임'[-][/c][c][74DBBC]의 효과가
-        강화[-][/c]되어 [c][74DBBC]보호막이 유지 되는 동안 주는 피해가
-        [@BUFF]Category:eProperty,ID:284501631,Percent:true[@BUFF]증가[-][/c]한다.
-        <br /><br />[각인] 엑스 레스큐
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][EEEEEE]'엑스
-        레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c] 입힌다. [c][F7ACA5]피해를
-        입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티 영웅에게 주는 모든 피해가
-        [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간
-        파티 저격형 영웅에게 주는 물리 치명타 피해 [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형
-        영웅에게 주는 마법 치명타 피해 [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간 파티 저격형 영웅에게 주는 물리 치명타 피해
-        [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형 영웅에게 주는 마법 치명타 피해
-        [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][EEEEEE]'엑스
-        레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c] 입힌다. [c][F7ACA5]피해를
-        입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티 영웅에게 주는 모든 피해가
-        [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간
-        파티 저격형 영웅에게 주는 물리 치명타 피해 [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형
-        영웅에게 주는 마법 치명타 피해 [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간 파티 저격형 영웅에게 주는 물리 치명타 피해
-        [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형 영웅에게 주는 마법 치명타 피해
-        [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][EEEEEE]'엑스
-        레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c] 입힌다. [c][F7ACA5]피해를
-        입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티 영웅에게 주는 모든 피해가
-        [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간
-        파티 저격형 영웅에게 주는 물리 치명타 피해 [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형
-        영웅에게 주는 마법 치명타 피해 [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간 파티 저격형 영웅에게 주는 물리 치명타 피해
-        [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형 영웅에게 주는 마법 치명타 피해
-        [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][EEEEEE]'엑스
-        레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c] 입힌다. [c][F7ACA5]피해를
-        입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티 영웅에게 주는 모든 피해가
-        [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간
-        파티 저격형 영웅에게 주는 물리 치명타 피해 [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형
-        영웅에게 주는 마법 치명타 피해 [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간 파티 저격형 영웅에게 주는 물리 치명타 피해
-        [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형 영웅에게 주는 마법 치명타 피해
-        [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][EEEEEE]'엑스
-        레스큐'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]마법 공격력의 [@DMG]ID:284522012[@DMG]을 4회[-][/c] 입힌다. [c][F7ACA5]피해를
-        입은 적은 [@BUFF_TIME]ID:2845018[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성 파티 영웅에게 주는 모든 피해가
-        [@BUFF]Category:eProperty,ID:284501831,Percent:true[@BUFF]감소[-][/c]한다.<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간
-        파티 저격형 영웅에게 주는 물리 치명타 피해 [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형
-        영웅에게 주는 마법 치명타 피해 [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][F7ACA5]전투 중인 적이 6명 이상[-][/c]일 때 [c][74DBBC]공격력이 높은[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅 1명이 주는 전투력 비례 피해가
-        [@BUFF]Category:eStat,ID:284502201,Percent:true[@BUFF][-][/c]증가한다.<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC][@BUFF_TIME]ID:2845019[@BUFF_TIME]초간 파티 저격형 영웅에게 주는 물리 치명타 피해
-        [@BUFF]Category:eProperty,ID:284501931,Percent:true[@BUFF]증가[-][/c]를, [c][74DBBC]마법형 영웅에게 주는 마법 치명타 피해
-        [@BUFF]Category:eProperty,ID:284502031,Percent:true[@BUFF]증가[-][/c]를 부여한다.
-        <br /><br />[각인] 바이탈 테러
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]파티 영웅의
-        생명력을 마법 공격력의 [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼
-        나눠서 회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]파티 영웅의
-        생명력을 마법 공격력의 [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼
-        나눠서 회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]파티 영웅의
-        생명력을 마법 공격력의 [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼
-        나눠서 회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]파티 영웅의
-        생명력을 마법 공격력의 [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼
-        나눠서 회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]<br><br>[c][7CC6FF][사용
-        효과][-][/c]<br>[c][74DBBC]파티 영웅의
-        생명력을 마법 공격력의 [@DMG]ID:284548014,284548014,284548014,284548014,284548014,284548014,284548014,284548014[@DMG]만큼
-        나눠서 회복[-][/c]시킨다.(최대 4명)<br>[c][74DBBC]각인 상태가 유지되는 동안 매초마다 파티 영웅의 잃은 생명력을[-][/c] [c][EEEEEE]'[각인] 바이탈 테러'[-][/c]
-        [c][74DBBC]사용 횟수X[@BUFF]Category:eDot,ID:284502511,Percent:true[@BUFF]회복[-][/c]시킨다. (최대 20회)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅에게 부여되는[-][/c] [c][EEEEEE]'서포트
-        타임'[-][/c][c][74DBBC]에 다음 효과가 추가[-][/c]된다.<br>- [c][74DBBC]주는 이로운 효과 유지시간
-        [@BUFF]Category:eStat,ID:284502801,Percent:true[@BUFF]증가[-][/c]<br>- [c][74DBBC]보호막이 유지 되는 동안 받는 피해
-        [@BUFF]Category:eProperty,ID:284502832,Percent:true[@BUFF]감소[-][/c]<br>- [c][74DBBC]체이서 및 영혼각인 자원 획득량
-        [@BUFF]Category:eStat,ID:284502901,Percent:true[@BUFF]증가[-][/c]
-        <br /><br />[각인] 대미지 클리어링
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]전투 시작 시 파티 단독 치유형[-][/c]이라면 [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티
-        영웅의 생명력이 70/40/10%가 될 때 [@BUFF_TIME]ID:2845039[@BUFF_TIME]초간 적의 피해를 받지않는 상태[-][/c]가 된다. (이 효과는 무효화 되지 않으며, 전투 중
-        각 1회 발동된다.)<br><br>[c][7CC6FF][사용 효과][-][/c]<br>[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어
-        [c][F7ACA5]모든[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 받는 피해를
-        [@BUFF_TIME]ID:2845031[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503131,Percent:true[@BUFF]증가[-][/c]시킨다.<br>[c][74DBBC]파티에[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅 뿐[-][/c]이라면 [c][F7ACA5]파티 영웅은 [@BUFF_TIME]ID:2845033[@BUFF_TIME]초간 적에게
-        피해를 입힐 때마다 전투력의 [@PERDMG][@DMG]ID:284538011[@DMG][@PERDMG]추가 피해를 4회[-][/c] 입힌다. [c][F7ACA5]근접한 적이 4명 이상[-][/c]일
-        경우 [c][F7ACA5]추가 피해량이 2배로 강화[-][/c]된다. (재사용 1초, 해당 피해는 각 영웅에게 집계된다.)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]전투 시작 시 파티 단독 치유형[-][/c]이라면 [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티
-        영웅의 생명력이 70/40/10%가 될 때 [@BUFF_TIME]ID:2845039[@BUFF_TIME]초간 적의 피해를 받지않는 상태[-][/c]가 된다. (이 효과는 무효화 되지 않으며, 전투 중
-        각 1회 발동된다.)<br><br>[c][7CC6FF][사용 효과][-][/c]<br>[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어
-        [c][F7ACA5]모든[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 받는 피해를
-        [@BUFF_TIME]ID:2845031[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503131,Percent:true[@BUFF]증가[-][/c]시킨다.<br>[c][74DBBC]파티에[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅 뿐[-][/c]이라면 [c][F7ACA5]파티 영웅은 [@BUFF_TIME]ID:2845033[@BUFF_TIME]초간 적에게
-        피해를 입힐 때마다 전투력의 [@PERDMG][@DMG]ID:284538011[@DMG][@PERDMG]추가 피해를 4회[-][/c] 입힌다. [c][F7ACA5]근접한 적이 4명 이상[-][/c]일
-        경우 [c][F7ACA5]추가 피해량이 2배로 강화[-][/c]된다. (재사용 1초, 해당 피해는 각 영웅에게 집계된다.)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]전투 시작 시 파티 단독 치유형[-][/c]이라면 [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티
-        영웅의 생명력이 70/40/10%가 될 때 [@BUFF_TIME]ID:2845039[@BUFF_TIME]초간 적의 피해를 받지않는 상태[-][/c]가 된다. (이 효과는 무효화 되지 않으며, 전투 중
-        각 1회 발동된다.)<br><br>[c][7CC6FF][사용 효과][-][/c]<br>[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어
-        [c][F7ACA5]모든[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 받는 피해를
-        [@BUFF_TIME]ID:2845031[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503131,Percent:true[@BUFF]증가[-][/c]시킨다.<br>[c][74DBBC]파티에[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅 뿐[-][/c]이라면 [c][F7ACA5]파티 영웅은 [@BUFF_TIME]ID:2845033[@BUFF_TIME]초간 적에게
-        피해를 입힐 때마다 전투력의 [@PERDMG][@DMG]ID:284538011[@DMG][@PERDMG]추가 피해를 4회[-][/c] 입힌다. [c][F7ACA5]근접한 적이 4명 이상[-][/c]일
-        경우 [c][F7ACA5]추가 피해량이 2배로 강화[-][/c]된다. (재사용 1초, 해당 피해는 각 영웅에게 집계된다.)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]전투 시작 시 파티 단독 치유형[-][/c]이라면 [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티
-        영웅의 생명력이 70/40/10%가 될 때 [@BUFF_TIME]ID:2845039[@BUFF_TIME]초간 적의 피해를 받지않는 상태[-][/c]가 된다. (이 효과는 무효화 되지 않으며, 전투 중
-        각 1회 발동된다.)<br><br>[c][7CC6FF][사용 효과][-][/c]<br>[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어
-        [c][F7ACA5]모든[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 받는 피해를
-        [@BUFF_TIME]ID:2845031[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503131,Percent:true[@BUFF]증가[-][/c]시킨다.<br>[c][74DBBC]파티에[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅 뿐[-][/c]이라면 [c][F7ACA5]파티 영웅은 [@BUFF_TIME]ID:2845033[@BUFF_TIME]초간 적에게
-        피해를 입힐 때마다 전투력의 [@PERDMG][@DMG]ID:284538011[@DMG][@PERDMG]추가 피해를 4회[-][/c] 입힌다. [c][F7ACA5]근접한 적이 4명 이상[-][/c]일
-        경우 [c][F7ACA5]추가 피해량이 2배로 강화[-][/c]된다. (재사용 1초, 해당 피해는 각 영웅에게 집계된다.)
-        <br />[c][7CC6FF][상시 효과][-][/c]<br>[c][74DBBC]전투 시작 시 파티 단독 치유형[-][/c]이라면 [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티
-        영웅의 생명력이 70/40/10%가 될 때 [@BUFF_TIME]ID:2845039[@BUFF_TIME]초간 적의 피해를 받지않는 상태[-][/c]가 된다. (이 효과는 무효화 되지 않으며, 전투 중
-        각 1회 발동된다.)<br><br>[c][7CC6FF][사용 효과][-][/c]<br>[c][EEEEEE]'대미지 클리어링'[-][/c][c][74DBBC]이 강화[-][/c]되어
-        [c][F7ACA5]모든[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성 적이[-][/c] [c][EEEEEE]'조율'[-][/c][c][F7ACA5]속성에게 받는 피해를
-        [@BUFF_TIME]ID:2845031[@BUFF_TIME]초간
-        [@BUFF]Category:eProperty,ID:284503131,Percent:true[@BUFF]증가[-][/c]시킨다.<br>[c][74DBBC]파티에[-][/c]
-        [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 영웅 뿐[-][/c]이라면 [c][F7ACA5]파티 영웅은 [@BUFF_TIME]ID:2845033[@BUFF_TIME]초간 적에게
-        피해를 입힐 때마다 전투력의 [@PERDMG][@DMG]ID:284538011[@DMG][@PERDMG]추가 피해를 4회[-][/c] 입힌다. [c][F7ACA5]근접한 적이 4명 이상[-][/c]일
-        경우 [c][F7ACA5]추가 피해량이 2배로 강화[-][/c]된다. (재사용 1초, 해당 피해는 각 영웅에게 집계된다.)
+        <br><br> 기본 공격
+        <br><br> 스플래쉬 러시
+        <br> 지정 방향으로 돌진해 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 위치 돌진 공격[-][/c] [c][74DBBC]#아군 강화[-][/c]
+        <br> [c][F7ACA5]지정 위치로 돌진해 적을 끌어모으며 물리 공격력의 [@DMG]ID:299705015[@DMG]범위 피해[-][/c]를 입힌다. [c][F7ACA5]피해를 입은 적은
+        [@BUFF_TIME]ID:2997004[@BUFF_TIME]초간 받는 피해가 [@BUFF]Category:eStat,ID:299700401,Percent:true[@BUFF]증가하고, 보호막이 부여된
+        대상에게 주는 피해가 [@BUFF]Category:eProperty,ID:299700433,Percent:true[@BUFF]감소[-][/c]한다.\n[c][74DBBC]파티 영웅은
+        [@BUFF_TIME]ID:2997005[@BUFF_TIME]초간 수호형에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299700501,Percent:true[@BUFF]증가[-][/c]한다.
+        <br><br> 오션 월풀
+        <br> 지정 방향에 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 방향 범위 공격[-][/c] [c][74DBBC]#아군 보호[-][/c]
+        <br> [c][F7ACA5]지정 방향 적에게 물리 공격력의 [@DMG]ID:299708015[@DMG]범위 피해를 입히고, [@BUFF_TIME]ID:2997006[@BUFF_TIME]초간 주는
+        피해를 [@BUFF]Category:eStat,ID:299700601,Percent:true[@BUFF]감소[-][/c]시킨다. [c][74DBBC]피해를 입은 적이 1명일 때, 파티 영웅은
+        [@BUFF_TIME]ID:2997007[@BUFF_TIME]초간 돌격형에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299700701,Percent:true[@BUFF]증가[-][/c]한다.\n[c][74DBBC]파티 영웅에게
+        [@BUFF_TIME]ID:2997008[@BUFF_TIME]초간 자신의 최대 생명력의 [@BUFF]Category:eShield,ID:299700851,Percent:true[@BUFF]보호막을
+        부여하고, 주는 피해를 [@BUFF]Category:eStat,ID:299700901,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br><br> 어비셜 퓨리
+        <br> 모든 적에게 피해를 입힌다.
+        <br> [c][F7ACA5]모든 적에게 물리 공격력의 [@DMG]ID:299757022[@DMG]피해[-][/c]를 입힌다. [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티
+        영웅은 [@BUFF_TIME]ID:2997077[@BUFF_TIME]초간 상태이상 면역 및 적의 공격에 밀려나지 않는 상태[-][/c]가 된다.\n[c][74DBBC]전투 중인 파티 돌격형
+        영웅이[-][/c] [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, [@BUFF_TIME]ID:2997069[@BUFF_TIME]초간 아래의 효과가
+        추가[-][/c]된다.\n\n- [c][F7ACA5]피해를 입은 적은[-][/c] [c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성에게 받는 피해와 저격/마법형에게 받는 피해가
+        [@BUFF]Category:eStat,ID:299706601,Percent:true[@BUFF]증가[-][/c]한다.\n- [c][74DBBC]마법형을 제외한[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 기본 치명타 피해와 마법형 적에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299706901,Percent:true[@BUFF]증가[-][/c]한다.
+        <br><br> 볼텍스 블링크
+        <br> 지정 위치로 이동해 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 위치 범위 공격[-][/c] [c][74DBBC]#아군 강화[-][/c]
+        <br> [c][F7ACA5]지정 위치로 이동하여 적을 끌어모으고 물리 공격력의 [@DMG]ID:299712014[@DMG] 피해[-][/c]를 입힌다.\n[c][F7ACA5]피해를 입은 적은
+        [@BUFF_TIME]ID:2997013[@BUFF_TIME]초간 공격 속도가 [@BUFF]Category:eStat,ID:299701301,Percent:true[@BUFF], 업화 속성에게 주는
+        피해가 [@BUFF]Category:eProperty,ID:299701332,Percent:true[@BUFF]감소[-][/c]한다.\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅에게 [@BUFF_TIME]ID:2997015[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]를 부여[-][/c]한다.\n\n[c][7CC6FF][해신의 가호][-][/c]\n[c][74DBBC]스킬이 3회 강화[-][/c]된다. (재사용
+        3초)\n[c][F7ACA5]스킬 사용 시 근접한 적 1명에게[-][/c] [c][EEEEEE]'넵티온'[-][/c] [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299714014[@DMG][@PERDMG]추가 범위 피해를 입힌다. 해당 피해는 최대 2번 전이[-][/c]된다.\n[c][74DBBC]적에게 받는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299702031,Percent:true[@BUFF]감소[-][/c]한다.
+        <br><br> 기억의 각인
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n\n[c][7CC6FF][각인][-][/c]\n능력 강화: [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000,
+        마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c], [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를 입힌다.
+        <br><br> [각인] 스플래쉬 러시
+        <br> 지정 방향에 투사체를 날려 피해를 입힌 뒤 돌진하여 추가 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 위치 돌진 공격[-][/c] [c][74DBBC]#아군 강화[-][/c]
+        <br> [c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의 [@DMG]ID:299733015[@DMG]피해를
+        입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다. \n[c][74DBBC]피해를 입은 적이 5명 이상일 때,
+        파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br><br> [각인] 오션 월풀
+        <br> 지정 방향에 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 방향 범위 공격[-][/c] [c][74DBBC]#아군 보호[-][/c]
+        <br> [c][EEEEEE]'오션 월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c] [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의
+        [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를 입힌다.\n[c][74DBBC]파티 영웅은
+        [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가[-][/c]한다.
+        <br><br> [각인] 볼텍스 블링크
+        <br> 지정 위치로 이동해 피해를 입힌다.
+        <br> [c][F7ACA5]#지정 위치 범위 공격[-][/c] [c][74DBBC]#아군 강화[-][/c]
+        <br> [c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소[-][/c]\n
+        <br><br> <br><br>
+        <br><br> 샤크 핀
+        <br> [c][EEEEEE]'스플래쉬 러시'[-][/c], [c][EEEEEE]'오션 월풀'[-][/c], [c][EEEEEE]'볼텍스 블링크'[-][/c] [c][74DBBC]사용 시 거리가 먼 적
+        1명의 위치에[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n\n[c][7CC6FF][샤크
+        핀][-][/c]\n[c][EEEEEE]'넵티온'[-][/c]을 향해 이동하며 도착할 때까지 경로상의 [c][F7ACA5]적을 끌어모으며 0.5초 마다 물리 공격력의
+        [@DMG]ID:299703012[@DMG]범위 피해[-][/c]를 입힌다.\n[c][F7ACA5]도착 시 근접한 적에게 전투력의
+        [@PERDMG][@DMG]ID:299702014[@DMG][@PERDMG]추가 피해를 입히고, [@BUFF_TIME]ID:2997002[@BUFF_TIME]초간 받는 기본/스킬 피해를
+        [@BUFF]Category:eStat,ID:299700201,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br><br> <br><br>
+        <br><br> [강화I] 볼텍스 블링크
+        <br><br> [강화I] 볼텍스 블링크
+        <br> [c][F7ACA5]지정 위치로 이동하여 적을 끌어모으고 물리 공격력의 [@DMG]ID:299712014[@DMG] 피해[-][/c]를 입힌다.\n[c][F7ACA5]피해를 입은 적은
+        [@BUFF_TIME]ID:2997013[@BUFF_TIME]초간 공격 속도가 [@BUFF]Category:eStat,ID:299701301,Percent:true[@BUFF], 업화 속성에게 주는
+        피해가 [@BUFF]Category:eProperty,ID:299701332,Percent:true[@BUFF]감소[-][/c]한다.\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅에게 [@BUFF_TIME]ID:2997015[@BUFF_TIME]초간[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]를 부여[-][/c]한다.\n\n[c][7CC6FF][해신의 가호][-][/c]\n[c][74DBBC]스킬이 3회 강화[-][/c]된다. (재사용
+        3초)\n[c][F7ACA5]스킬 사용 시 근접한 적 1명에게[-][/c] [c][EEEEEE]'넵티온'[-][/c] [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299714014[@DMG][@PERDMG]추가 범위 피해를 입힌다. 해당 피해는 최대 2번 전이[-][/c]된다.\n[c][74DBBC]적에게 받는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299702031,Percent:true[@BUFF]감소[-][/c]하고, [c][7CC6FF]주는 전투력 비례 피해가
+        [@BUFF]Category:eStat,ID:299701501,Percent:true[@BUFF]증가한다.[-][/c]
+        <br><br> [강화II] 볼텍스 블링크
+        <br> [c][7CC6FF][상시 효과]\n'생명'속성 돌격형 적이 6명 이상일 때, 파티 저격/마법형 영웅은 생명력이 70%이하인 적에게 주는 피해가
+        [@BUFF]Category:eProperty,ID:299701632,Percent:true[@BUFF], 극대화 확률이
+        [@BUFF]Category:eStat,ID:299701601,Percent:true[@BUFF]증가한다.\n적이 죽을 때마다 파티 영웅은 돌격형에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299701701,Percent:true[@BUFF]증가한다. (최대 6중첩)[-][/c]\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][F7ACA5]지정 위치로 이동하여 적을 끌어모으고 물리 공격력의 [@DMG]ID:299712014[@DMG] 피해[-][/c]를 입힌다.\n[c][F7ACA5]피해를 입은
+        적은 [@BUFF_TIME]ID:2997013[@BUFF_TIME]초간 공격 속도가 [@BUFF]Category:eStat,ID:299701301,Percent:true[@BUFF], 업화 속성에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299701332,Percent:true[@BUFF]감소[-][/c]한다.\n[c][74DBBC]전투 중인 파티 돌격형
+        영웅이[-][/c] [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅에게 [@BUFF_TIME]ID:2997015[@BUFF_TIME]초간[-][/c]
+        [c][EEEEEE]'해신의 가호'[-][/c][c][74DBBC]를 부여[-][/c]한다.\n\n[c][7CC6FF][해신의 가호][-][/c]\n[c][74DBBC]스킬이 3회
+        강화[-][/c]된다. (재사용 3초)\n[c][F7ACA5]스킬 사용 시 근접한 적 1명에게[-][/c] [c][EEEEEE]'넵티온'[-][/c] [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299714014[@DMG][@PERDMG]추가 범위 피해를 입힌다. 해당 피해는 최대 2번 전이[-][/c]된다.\n[c][74DBBC]적에게 받는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299702031,Percent:true[@BUFF]감소[-][/c]하고, [c][7CC6FF]주는 전투력 비례 피해가
+        [@BUFF]Category:eStat,ID:299701501,Percent:true[@BUFF]증가한다.[-][/c]
+        <br><br> <br><br>
+        <br><br> 기억의 각인
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]파티 영웅은 받는 이로운 효과 지속 시간이 [@BUFF]Category:eStat,ID:299703001,Percent:true[@BUFF], 보호막이 부여된 적에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299703032,Percent:true[@BUFF][-][/c]증가한다.\n\n[c][7CC6FF][각인][-][/c]\n능력 강화:
+        [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000, 마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c],
+        [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를
+        입힌다.\n[c][74DBBC]기본 공격 시, 남은 스킬 재사용 시간이
+        [@BUFF]Category:eProperty,ID:299703131,Percent:true[@BUFF]감소[-][/c]한다.\n[c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]도착 시
+        추가 피해가 전투력의 [@PERDMG][@DMG]ID:299725014[@DMG][@PERDMG]로 강화[-][/c]되며, [c][74DBBC]파티 영웅의 체이서 자원을
+        [@BUFF]Category:eProperty,ID:299703331,Percent:false[@BUFF]생성시키고, [@BUFF_TIME]ID:2997034[@BUFF_TIME]초간 주는 기본/스킬
+        피해를 [@BUFF]Category:eStat,ID:299703401,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]파티 영웅은 받는 이로운 효과 지속 시간이 [@BUFF]Category:eStat,ID:299703001,Percent:true[@BUFF], 보호막이 부여된 적에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299703032,Percent:true[@BUFF][-][/c]증가한다.\n\n[c][7CC6FF][각인][-][/c]\n능력 강화:
+        [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000, 마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c],
+        [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를
+        입힌다.\n[c][74DBBC]기본 공격 시, 남은 스킬 재사용 시간이
+        [@BUFF]Category:eProperty,ID:299703131,Percent:true[@BUFF]감소[-][/c]한다.\n[c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]도착 시
+        추가 피해가 전투력의 [@PERDMG][@DMG]ID:299725014[@DMG][@PERDMG]로 강화[-][/c]되며, [c][74DBBC]파티 영웅의 체이서 자원을
+        [@BUFF]Category:eProperty,ID:299703331,Percent:false[@BUFF]생성시키고, [@BUFF_TIME]ID:2997034[@BUFF_TIME]초간 주는 기본/스킬
+        피해를 [@BUFF]Category:eStat,ID:299703401,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]파티 영웅은 받는 이로운 효과 지속 시간이 [@BUFF]Category:eStat,ID:299703001,Percent:true[@BUFF], 보호막이 부여된 적에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299703032,Percent:true[@BUFF][-][/c]증가한다.\n\n[c][7CC6FF][각인][-][/c]\n능력 강화:
+        [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000, 마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c],
+        [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를
+        입힌다.\n[c][74DBBC]기본 공격 시, 남은 스킬 재사용 시간이
+        [@BUFF]Category:eProperty,ID:299703131,Percent:true[@BUFF]감소[-][/c]한다.\n[c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]도착 시
+        추가 피해가 전투력의 [@PERDMG][@DMG]ID:299725014[@DMG][@PERDMG]로 강화[-][/c]되며, [c][74DBBC]파티 영웅의 체이서 자원을
+        [@BUFF]Category:eProperty,ID:299703331,Percent:false[@BUFF]생성시키고, [@BUFF_TIME]ID:2997034[@BUFF_TIME]초간 주는 기본/스킬
+        피해를 [@BUFF]Category:eStat,ID:299703401,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]파티 영웅은 받는 이로운 효과 지속 시간이 [@BUFF]Category:eStat,ID:299703001,Percent:true[@BUFF], 보호막이 부여된 적에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299703032,Percent:true[@BUFF][-][/c]증가한다.\n\n[c][7CC6FF][각인][-][/c]\n능력 강화:
+        [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000, 마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c],
+        [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를
+        입힌다.\n[c][74DBBC]기본 공격 시, 남은 스킬 재사용 시간이
+        [@BUFF]Category:eProperty,ID:299703131,Percent:true[@BUFF]감소[-][/c]한다.\n[c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]도착 시
+        추가 피해가 전투력의 [@PERDMG][@DMG]ID:299725014[@DMG][@PERDMG]로 강화[-][/c]되며, [c][74DBBC]파티 영웅의 체이서 자원을
+        [@BUFF]Category:eProperty,ID:299703331,Percent:false[@BUFF]생성시키고, [@BUFF_TIME]ID:2997034[@BUFF_TIME]초간 주는 기본/스킬
+        피해를 [@BUFF]Category:eStat,ID:299703401,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]생성 시, 2개가 생성[-][/c]된다. [c][EEEEEE]'샤크
+        핀'[-][/c][c][74DBBC]이 생성될 때마다 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성에게 주는 피해량이
+        [@BUFF]Category:eProperty,ID:299702931,Percent:true[@BUFF]증가[-][/c]한다. (최대 20중첩, 이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]파티 영웅은 받는 이로운 효과 지속 시간이 [@BUFF]Category:eStat,ID:299703001,Percent:true[@BUFF], 보호막이 부여된 적에게
+        주는 피해가 [@BUFF]Category:eProperty,ID:299703032,Percent:true[@BUFF][-][/c]증가한다.\n\n[c][7CC6FF][각인][-][/c]\n능력 강화:
+        [c][74DBBC]생명력+10,769 물리공격력+4,461, 물리방어력+2,000, 마법방어력+1,384[-][/c]\n\n[c][74DBBC]기본 공격의 범위가 넓어지고[-][/c],
+        [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299721012,299721012,299721012,299721012[@DMG][@PERDMG]범위 피해[-][/c]를
+        입힌다.\n[c][74DBBC]기본 공격 시, 남은 스킬 재사용 시간이
+        [@BUFF]Category:eProperty,ID:299703131,Percent:true[@BUFF]감소[-][/c]한다.\n[c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]도착 시
+        추가 피해가 전투력의 [@PERDMG][@DMG]ID:299725014[@DMG][@PERDMG]로 강화[-][/c]되며, [c][74DBBC]파티 영웅의 체이서 자원을
+        [@BUFF]Category:eProperty,ID:299703331,Percent:false[@BUFF]생성시키고, [@BUFF_TIME]ID:2997034[@BUFF_TIME]초간 주는 기본/스킬
+        피해를 [@BUFF]Category:eStat,ID:299703401,Percent:true[@BUFF]증가[-][/c]시킨다.
+        <br><br> [각인] 스플래쉬 러시
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의
+        [@DMG]ID:299733015[@DMG]피해를 입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다.
+        \n[c][74DBBC]피해를 입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][74DBBC]피해를
+        입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의
+        [@DMG]ID:299733015[@DMG]피해를 입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다.
+        \n[c][74DBBC]피해를 입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][74DBBC]피해를
+        입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의
+        [@DMG]ID:299733015[@DMG]피해를 입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다.
+        \n[c][74DBBC]피해를 입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][74DBBC]피해를
+        입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의
+        [@DMG]ID:299733015[@DMG]피해를 입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다.
+        \n[c][74DBBC]피해를 입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][74DBBC]피해를
+        입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'스플래쉬 러시'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]투사체를 발사해 물리 공격력의
+        [@DMG]ID:299733015[@DMG]피해를 입히고, 돌진하여 전투력의 [@PERDMG][@DMG]ID:299731015[@DMG][@PERDMG]추가 범위 피해[-][/c]를 입힌다.
+        \n[c][74DBBC]피해를 입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 수호/돌격형 적이 4명 이상일 때,[-][/c]
+        [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은 주는 체이서 스킬 피해량이
+        [@BUFF]Category:eProperty,ID:299703631,Percent:true[@BUFF]증가[-][/c]하고, [c][F7ACA5]모든 적은 받는 전투력 비례 피해와 최종 피해가
+        [@BUFF]Category:eStat,ID:299707501,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][74DBBC]피해를
+        입은 적이 5명 이상일 때, 파티 영웅은 수호형에게 주는 피해가 [@BUFF]Category:eStat,ID:299703801,Percent:true[@BUFF]증가하고,
+        [-][/c][c][EEEEEE]'샤크핀'[-][/c][c][74DBBC]을 생성[-][/c]한다.
+        <br><br> [각인] 오션 월풀
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][74DBBC]전투 시작 시,[-][/c] [c][EEEEEE]'업화'[-][/c][c][74DBBC]속성 파티 영웅은
+        [@BUFF_TIME]ID:2997076[@BUFF_TIME]초간 각자 최대 생명력의 [@BUFF]Category:eShield,ID:299707652,Percent:true[@BUFF]보호막을
+        획득하고, 돌격형에게 받는 피해가 [@BUFF]Category:eStat,ID:299707601,Percent:true[@BUFF]감소[-][/c]한다. (이 효과는 무효화 되지
+        않는다.)\n[c][74DBBC]전투 중인 파티 마법형 영웅이 2명 이상일 때, 파티 영웅이 보스에게 주는 피해가
+        [@BUFF]Category:eStat,ID:299704801,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용 효과][-][/c]\n[c][EEEEEE]'오션
+        월풀'[-][/c][c][74DBBC]이 강화[-][/c]되어 [c][F7ACA5]전투력의 [@PERDMG][@DMG]ID:299734012[@DMG][@PERDMG]범위 피해를 입히고,[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][F7ACA5]주변 적들에게 전투력의 [@PERDMG][@DMG]ID:299735012[@DMG][@PERDMG]피해[-][/c]를
+        입힌다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997049[@BUFF_TIME]초간 주는 치명타 피해가
+        [@BUFF]Category:eStat,ID:299704901,Percent:true[@BUFF]증가한다. 피해를 입은 적이 1명일 때, 파티 영웅은 치명타 발동 확률과 마법 치명타 피해량이
+        [@BUFF]Category:eStat,ID:299705001,Percent:true[@BUFF]증가[-][/c]한다.
+        <br><br> [각인] 볼텍스 블링크
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'볼텍스 존'[-][/c] [c][74DBBC]범위 안의 적이[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]로 피해를 받을 때마다 파티 영웅은 영혼각인 자원획득량이
+        [@BUFF]Category:eStat,ID:299706401,Percent:true[@BUFF]증가[-][/c]한다. (최대 15중첩)\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 돌격형 적에게 주는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299706731,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소\n- 생명력이 80%이하일 때, 받는 피해
+        [@BUFF]Category:eProperty,ID:299706031,Percent:true[@BUFF]증가\n- 주는 최종 피해
+        [@BUFF]Category:eStat,ID:299707301,Percent:true[@BUFF]감소[-][/c]
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'볼텍스 존'[-][/c] [c][74DBBC]범위 안의 적이[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]로 피해를 받을 때마다 파티 영웅은 영혼각인 자원획득량이
+        [@BUFF]Category:eStat,ID:299706401,Percent:true[@BUFF]증가[-][/c]한다. (최대 15중첩)\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 돌격형 적에게 주는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299706731,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소\n- 생명력이 80%이하일 때, 받는 피해
+        [@BUFF]Category:eProperty,ID:299706031,Percent:true[@BUFF]증가\n- 주는 최종 피해
+        [@BUFF]Category:eStat,ID:299707301,Percent:true[@BUFF]감소[-][/c]
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'볼텍스 존'[-][/c] [c][74DBBC]범위 안의 적이[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]로 피해를 받을 때마다 파티 영웅은 영혼각인 자원획득량이
+        [@BUFF]Category:eStat,ID:299706401,Percent:true[@BUFF]증가[-][/c]한다. (최대 15중첩)\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 돌격형 적에게 주는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299706731,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소\n- 생명력이 80%이하일 때, 받는 피해
+        [@BUFF]Category:eProperty,ID:299706031,Percent:true[@BUFF]증가\n- 주는 최종 피해
+        [@BUFF]Category:eStat,ID:299707301,Percent:true[@BUFF]감소[-][/c]
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'볼텍스 존'[-][/c] [c][74DBBC]범위 안의 적이[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]로 피해를 받을 때마다 파티 영웅은 영혼각인 자원획득량이
+        [@BUFF]Category:eStat,ID:299706401,Percent:true[@BUFF]증가[-][/c]한다. (최대 15중첩)\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 돌격형 적에게 주는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299706731,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소\n- 생명력이 80%이하일 때, 받는 피해
+        [@BUFF]Category:eProperty,ID:299706031,Percent:true[@BUFF]증가\n- 주는 최종 피해
+        [@BUFF]Category:eStat,ID:299707301,Percent:true[@BUFF]감소[-][/c]
+        <br> [c][7CC6FF][상시 효과][-][/c]\n[c][EEEEEE]'볼텍스 존'[-][/c] [c][74DBBC]범위 안의 적이[-][/c] [c][EEEEEE]'해신의
+        가호'[-][/c][c][74DBBC]로 피해를 받을 때마다 파티 영웅은 영혼각인 자원획득량이
+        [@BUFF]Category:eStat,ID:299706401,Percent:true[@BUFF]증가[-][/c]한다. (최대 15중첩)\n[c][74DBBC]전투 중인 파티 돌격형 영웅이[-][/c]
+        [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]뿐일 때, 파티 영웅은[-][/c] [c][EEEEEE]'생명'[-][/c][c][74DBBC]속성 돌격형 적에게 주는 모든 피해가
+        [@BUFF]Category:eProperty,ID:299706731,Percent:true[@BUFF]증가[-][/c]한다.\n\n[c][7CC6FF][사용
+        효과][-][/c]\n[c][EEEEEE]'볼텍스 블링크'[-][/c][c][74DBBC]가 강화[-][/c]되어 [c][F7ACA5]전투력의
+        [@PERDMG][@DMG]ID:299737014[@DMG][@PERDMG]피해[-][/c]를 입히고, [c][74DBBC]16초간[-][/c] [c][EEEEEE]'볼텍스
+        존'[-][/c][c][74DBBC]을 생성[-][/c]한다.\n[c][74DBBC]파티 영웅은 [@BUFF_TIME]ID:2997057[@BUFF_TIME]초간 주는 스킬 치명타 피해가[-][/c]
+        [c][EEEEEE]'샤크 핀'[-][/c] [c][74DBBC]개수X[@BUFF]Category:eProperty,ID:299705731,Percent:true[@BUFF]증가[-][/c]한다.(최대
+        60%)\n\n[c][7CC6FF][볼텍스 존][-][/c]\n[c][F7ACA5]범위 내 적에게 아래의 효과가 부여된다.\n- 매 초 전투력의
+        [@PERDMG][@DMG]ID:299753012[@DMG][@PERDMG]피해\n-[-][/c] [c][EEEEEE]'샤크 핀'[-][/c][c][F7ACA5]에 받는 피해
+        [@BUFF]Category:eProperty,ID:299705831,Percent:true[@BUFF]증가\n- 이동 속도
+        [@BUFF]Category:eStat,ID:299705901,Percent:true[@BUFF]감소\n- 생명력이 80%이하일 때, 받는 피해
+        [@BUFF]Category:eProperty,ID:299706031,Percent:true[@BUFF]증가\n- 주는 최종 피해
+        [@BUFF]Category:eStat,ID:299707301,Percent:true[@BUFF]감소[-][/c]
         <br /><br /><br /><br />
 
     </div>
     <div id="text1" style="background-color:#3D3D3D; color:#EEEEEE;">
         <h2>Pet</h2>
-        <br />기본 공격
-        <br />근접한 적 1명을 공격한다.
-        <br />[c][F7ACA5]근접한 적 1명에게 마법 공격력의 [@DMG]ID:285201014[@DMG]피해[-][/c]를 입힌다.
-        <br /><br />서포트 센서
-        <br />파티 '조율'속성 영웅을 회복시키고, 체력이 낮은 영웅에게 보호막을 부여한다.
-        <br />[c][74DBBC]모든[-][/c] [c][EEEEEE]'조율'[-][/c][c][74DBBC]속성 파티 영웅의 생명력을 마법 공격력의 [@DMG]ID:285202012[@DMG]만큼
-        회복[-][/c]시키고, [c][74DBBC]남은 생명력이 낮은 파티 영웅 1명에게 [@BUFF_TIME]ID:2852001[@BUFF_TIME]초간 대상 최대 체력의
-        [@BUFF]Category:eShield,ID:285200151,Percent:true[@BUFF]보호막을 부여[-][/c]한다.
-
+        <br><br> 기본 공격
+        <br> 적 1명에게 피해를 입힌다.
+        <br> [c][F7ACA5]근접한 1명에게 물리 공격력의 [@DMG]ID:299801014[@DMG]피해[-][/c]를 입힌다.\n[c][EEEEEE]'넵티온'[-][/c][c][74DBBC]이 영혼
+        각인 상태일 시[-][/c] [c][EEEEEE]'넵티온'[-][/c][c][74DBBC]의 치명타 확률이
+        [@BUFF]Category:eStat,ID:299800101,Percent:true[@BUFF]추가 증가[-][/c]한다.
+        <br><br> 버블 웨이브
+        <br> 지정 범위에 피해를 입힌다.
+        <br> [c][F7ACA5]지정 방향의 적에게 물리 공격력의 [@DMG]ID:299802012[@DMG]피해[-][/c]를 입힌다.\n[c][F7ACA5]피해를 입은 적은
+        [@BUFF_TIME]ID:2998002[@BUFF_TIME]초간 업화 속성에게 받는 피해가
+        [@BUFF]Category:eProperty,ID:299800231,Percent:true[@BUFF]증가[-][/c]한다.
     </div>
     <script>
         function R(text) {
