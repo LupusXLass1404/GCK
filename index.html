@@ -33,311 +33,338 @@
 <body>
     <div id="text" style="background-color:#3D3D3D; color:#EEEEEE;">
         <br><br> 기본 공격
-        <br><br> 루프드 신
-        <br> 적 1명에게 피해를 입히고 도트 피해 디버프를 부여한다.
-        <br> [c][F7ACA5]#단일피해[-][/c] [c][F7ACA5]#도트피해디버프[-][/c]
-        <br> 지정한 적 1명에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227010012[@DMG][-][/c]범위 피해를 입힌다. 지정한 적에게는
-        [@BUFF_TIME]ID:2270020[@BUFF_TIME]초간 '루프'를 부여한다.<br><br>[루프]<br>초당 부여된 횟수(최대 5회)X마법 공격력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:227002011,Percent:true[@BUFF][-][/c]추가 피해
-        <br><br> 로스트 스핀
-        <br> 지정 범위의 적에게 피해를 입히고 조건부 추가 피해를 발생시킨다.
-        <br> [c][F7ACA5]#범위피해[-][/c] [c][F7ACA5]#조건부피해[-][/c]
-        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227012012[@DMG][-][/c]피해를 입힌다. 피해를 입은 적은
-        [@BUFF_TIME]ID:2270022[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해가
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227002231,Percent:true[@BUFF][-][/c]증가하고 '루프'상태라면 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227013011[@DMG][@PERDMG][-][/c]추가 피해를 입는다.
-        <br><br> 페이트 크래시
-        <br> 지정 범위의 적에게 피해를 입히고 생명속성에게 받는 피해를 증가시킨다.
-        <br> [c][F7ACA5]#범위피해[-][/c] [c][F7ACA5]#속성피해증가[-][/c]
-        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227014012[@DMG][-][/c]피해를 입힌다. 피해를 입은 적은
-        [@BUFF_TIME]ID:2270023[@BUFF_TIME]초간 생명속성에게 받는 피해가
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227002331,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br> 액시스 루인
-        <br> 지정 방향의 적에게 피해를 입히고 1명에게 사망할 때까지 지속피해를 입힌다.
-        <br> [c][F7ACA5]#전방피해[-][/c] [c][F7ACA5]#지속피해[-][/c]
-        <br> 지정 방향의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227015012[@DMG][-][/c]피해를 입힌다.<br>피해를 입은 최대 생명력이 높은 적 1명은 2초마다 마법
-        공격력의
-        [c][F7ACA5][@DMG]ID:227017011[@DMG][-][/c]추가 피해를 입는다. 대상이 이미 추가 피해효과를 보유한 상태라면 피해 횟수를 증가시킨다. (최대 8회,무효화
-        불가,'그랑디엘T'사망 시 제거)
+        <br><br> 홀리 웨이브
+        <br> 근접한 적에게는 피해를, 파티 영웅에게는 회복을 부여한다.
+        <br> 근접한 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329604012[@DMG][-][/c]피해를 입힌다.\n근접한 파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329604022[@DMG][-][/c]만큼 회복하고 [@BUFF_TIME]ID:3296005[@BUFF_TIME]초간 받는 피해와 기본/스킬 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329600501,Percent:true[@BUFF][-][/c]감소한다.
+        <br><br> 디바인 오브
+        <br> 파티 영웅에게 투사체를 날려 경로상의 적을 공격한다.
+        <br> [c][74DBBC]#아군강화[-][/c] [c][74DBBC]#자원회복[-][/c]
+        <br> 근접한 최대 생명력이 가장 높은 파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329606025[@DMG][-][/c]피해를 입힌다. 대상
+        파티 영웅은 [@BUFF_TIME]ID:3296006[@BUFF_TIME]초간 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329600601,Percent:true[@BUFF][-][/c], 치명타 확률과 데미지가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329600603,Percent:true[@BUFF][-][/c]증가하고 SP를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606631,Percent:false[@BUFF][-][/c]획득한다. 모든 파티 영웅에게 전이되어 동일한 효과를
+        발생시킨다.
+        <br><br> 콜 생츄어리
+        <br> 지정 범위에 적에게는 피해를, 파티 영웅은 강화효과를 주는 영역을 설치한다.
+        <br> [c][F7ACA5]#지속피해[-][/c] [c][74DBBC]#아군강화[-][/c]
+        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329607032[@DMG][-][/c]피해를 입히고, 해당 위치에 15초간 '생츄어리'를 생성한다. (최대
+        1개)\n\n[생츄어리]\n범위 내 적에게 매 초 전투력의 [c][F7ACA5][@DMG]ID:329608012[@DMG][-][/c]피해를 입히고 유지시간 종료 시 전투력의
+        [c][F7ACA5][@DMG]ID:329626012[@DMG][-][/c]추가 피해를 입힌다.\n범위 내 생명속성 파티 영웅에게는 아래 효과가 부여된다. (무효화 불가)\n- 매 초 최대 생명력
+        [c][74DBBC][@DMG]ID:329608022[@DMG][-][/c]회복\n- 주는 최종 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329600801,Percent:true[@BUFF][-][/c]
+        <br><br> 이클립스 블레싱
+        <br> 지정 범위 적에게 피해를 입히고 파티 영웅을 강화한다.
+        <br> [c][F7ACA5]#범위피해[-][/c] [c][74DBBC]#아군강화[-][/c]
+        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329609012[@DMG][-][/c]피해를 입힌다.\n생명속성 파티 저격/마법형 영웅 2명에게 '블레싱'을
+        [@BUFF_TIME]ID:3296009[@BUFF_TIME]초간 부여한다.\n\n[블레싱]\n주는 기본 피해의
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600931,Percent:true[@BUFF][-][/c]만큼 추가피해를 입히고 적에게 주는 모든 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600932,Percent:true[@BUFF][-][/c], 생명력이 70%이하인 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600933,Percent:true[@BUFF][-][/c]증가한다.
         <br><br> 기억의 각인
-        <br> [각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003701,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br> [각인] 루프드 신
-        <br> 적 1명에게 피해를 입히고 도트 피해 디버프를 부여한다.
-        <br> [c][F7ACA5]#단일피해[-][/c] [c][F7ACA5]#도트피해디버프[-][/c]
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 피해를 2회 입힌다.
-        <br><br> [각인] 로스트 스핀
-        <br> 지정 범위의 적에게 피해를 입히고 조건부 추가 피해를 발생시킨다.
-        <br> [c][F7ACA5]#범위피해[-][/c] [c][F7ACA5]#조건부피해[-][/c]
-        <br> [상시 효과]<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br><br> [각인] 액시스 루인
-        <br> 지정 방향의 적에게 피해를 입히고 1명에게 사망할 때까지 지속피해를 입힌다.
-        <br> [c][F7ACA5]#전방피해[-][/c] [c][F7ACA5]#지속피해[-][/c]
-        <br> '액시스 루인'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.
-        <br><br> 로타 포르투나
-        <br> 적 1명에게 강한 범위 피해를 입힌다.
-        <br> [c][F7ACA5]#범위피해[-][/c]
-        <br> [상시 효과]<br>'모이라이'의 이로운 효과가 자신을 제외한 공격력이 높은 생명속성 파티 영웅 1명에게 함께 부여된다.<br><br>[사용 효과]<br>지정한 적 1명에게 마법 공격력의
-        [c][F7ACA5][@DMG]ID:227057012[@DMG][-][/c]범위 피해를 입힌다.
+        <br> '썬샤인' 효과가 강화된다.
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br><br> [각인] 홀리 웨이브
+        <br> 근접한 적에게는 피해를, 파티 영웅에게는 회복을 부여한다.
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입힌다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br> [각인] 디바인 오브
+        <br> 파티 영웅에게 투사체를 날려 경로상의 적을 공격한다.
+        <br><br> 더미데이터
+        <br> '디바인 오브'가 강화되어 모든 파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상
+        파티 영웅에게 [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br> [각인] 이클립스 블레싱
+        <br> 지정 범위 적에게 약화효과와 피해를 입히고 파티 영웅을 강화한다.
+        <br> [c][F7ACA5]#범위피해[-][/c] [c][74DBBC]#아군강화[-][/c]
+        <br> '이클립스 블레싱'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회
+        받거나 사망 시, '낙인'이 제거되고 생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
+        <br><br> 문 레버레이션
+        <br> 파티 영웅을 강화하고 지속적으로 회복시킨다.
+        <br> [상시 효과]\n적에게 피해를 입힐 때마다 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604801,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604802,Percent:false[@BUFF][-][/c]증가한다.(무효화 불가, 25중첩)\n\n[사용 효과]\n파티 영웅의
+        생명력을 대상 최대 생명력의 [c][74DBBC][@DMG]ID:329620012[@DMG][-][/c]만큼 회복시키고, 생명속성이라면 [@BUFF_TIME]ID:3296062[@BUFF_TIME]초간
+        아래 효과를 부여한다.\n- 마법형에게 주는 피해 [c][74DBBC][@BUFF]Category:eStat,ID:329604901,Percent:true[@BUFF][-][/c]증가\n-
+        [c][F7ACA5]파괴력[-][/c] [c][74DBBC][@BUFF]Category:eStat,ID:329604902,Percent:false[@BUFF][-][/c]증가\n- 매 초 최대 생명력의
+        [c][74DBBC][@DMG]ID:329621012[@DMG][-][/c]회복
         <br><br> <br><br>
-        <br><br> 모이라이
-        <br> 스킬 사용 횟수에 따라 자신을 강화시키는 '모이라이'를 획득한다
-        <br> 전투 시작 시 자신에게 '모이라이'가 부여된다.<br><br>[모이라이]<br>무효화 불가<br>생명력이 1초 마다 마법 공격력의
-        [c][74DBBC][@DMG]ID:227002011[@DMG][-][/c]만큼 회복<br>모든 스킬의 사용 횟수에 따라 다음 효과 발동<br>- 10회 : 15초 마다
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227000931,Percent:false[@BUFF][-][/c]체이서 자원 획득<br>- 20회 : 극대화 확률
-        [c][74DBBC][@BUFF]Category:eStat,ID:227001001,Percent:true[@BUFF][-][/c]증가<br>- 30회 : 주는 체이서 피해
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227001131,Percent:true[@BUFF][-][/c]증가<br>- 40회 : 조율속성 적 받는 전투력 비례 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227001201,Percent:true[@BUFF][-][/c]증가<br>- 50회 : 수호/돌격형에게 주는 피해
-        [c][74DBBC][@BUFF]Category:eStat,ID:227008901,Percent:true[@BUFF][-][/c]증가
-        <br><br> 플롯 네스트
-        <br> 피해를 입힌 적에게 파티 영웅이 공격 시 Sp를 획득한다.
-        <br> [c][EEEEEE]'넬리아(T)'[-][/c][c][F7ACA5]에게 피해를 입은 적은 [@BUFF_TIME]ID:2271001[@BUFF_TIME]초 동안 상처[-][/c]가 벌어진다.
-        [c][F7ACA5]파티 영웅은 상처가 벌어진 적에게 피해[-][/c]를 입힐 때마다 [c][74DBBC]생명력이 마법 공격력의 [@DMG]ID:227104014[@DMG]만큼 회복[-][/c]되고,
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227100331,Percent:false[@BUFF]Sp를 획득[-][/c]한다. (재사용
-        1초)<br><br>[c][F7ACA5]모든
-        적에게 8초 마다 마법 공격력의 [@DMG]ID:227103012[@DMG]피해[-][/c]를 입힌다. [c][F7ACA5]피해를 입은 적은
-        [@BUFF_TIME]ID:2271004[@BUFF_TIME]초 동안 [-][/c][c][EEEEEE]'업화'[-][/c][c][F7ACA5]속성에게 받는 피해가
-        [@BUFF]Category:eProperty,ID:227100431,Percent:true[@BUFF]증가[-][/c]한다.
+        <br><br> 썬샤인
+        <br> 적을 일정 횟수 이상 공격 시 아군을 강화한다.
+        <br> 적에게 피해를 10회 입히면, 파티 생명속성 영웅의 생명력을 마법 공격력의 [c][74DBBC][@DMG]ID:329602011[@DMG][-][/c]만큼 회복시킨다. 회복된 파티 영웅은
+        [@BUFF_TIME]ID:3296002[@BUFF_TIME]초간 SP/체이서/영혼각인 자원 획득량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329600201,Percent:true[@BUFF][-][/c]증가하고 SP소모량이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600234,Percent:true[@BUFF][-][/c]감소한다.
         <br><br> <br><br>
-        <br> [강화I] 액시스 루인
-        <br><br> [강화I] 액시스 루인
-        <br> [상시 효과]<br>조율속성 적에게 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227003431,Percent:true[@BUFF][-][/c]증가한다.<br><br>[사용 효과]<br>지정 방향의 적에게
-        마법 공격력의
-        [c][F7ACA5][@DMG]ID:227015012[@DMG][-][/c]피해를 입힌다.<br>피해를 입은 최대 생명력이 높은 적 1명은 2초마다 마법 공격력의
-        [c][F7ACA5][@DMG]ID:227017011[@DMG][-][/c]추가 피해를 입는다. 대상이 이미 추가 피해효과를 보유한 상태라면 피해 횟수를 증가시킨다. (최대 8회,무효화
-        불가,'그랑디엘T'사망 시 제거)
-        <br><br> [강화II] 액시스 루인
-        <br> [상시 효과]<br>조율속성 적에게 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227003431,Percent:true[@BUFF][-][/c]증가한다.<br>'모이라이'의 40회 효과가 강화되어 모든
-        조율속성
-        적이 받는 체이서 피해를 [c][F7ACA5][@BUFF]Category:eProperty,ID:227003631,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용
-        효과]<br>지정
-        방향의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227015012[@DMG][-][/c]피해를 입힌다.<br>피해를 입은 최대 생명력이 높은 적 1명은 2초마다 마법 공격력의
-        [c][F7ACA5][@DMG]ID:227017011[@DMG][-][/c]추가 피해를 입는다. 대상이 이미 추가 피해효과를 보유한 상태라면 피해 횟수를 증가시킨다. (최대 8회,무효화
-        불가,'그랑디엘T'사망 시 제거)
+        <br><br> [강화I] 이클립스 블레싱
+        <br><br> [강화I] 이클립스 블레싱
+        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329609012[@DMG][-][/c]피해를 입힌다.\n생명속성 파티 저격/마법형 영웅 2명에게 '블레싱'을
+        [@BUFF_TIME]ID:3296009[@BUFF_TIME]초간 부여한다.\n\n[블레싱]\n주는 기본 피해의
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600931,Percent:true[@BUFF][-][/c]만큼 추가피해를 입히고 적에게 주는 모든 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600932,Percent:true[@BUFF][-][/c], 생명력이 70%이하인 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600933,Percent:true[@BUFF][-][/c]증가한다.\n스킬 사용 시 다음 효과가 적용된다.\n- 극대화
+        확률 [c][74DBBC][@BUFF]Category:eStat,ID:329601701,Percent:true[@BUFF][-][/c]증가 (최대 100%, 극대화 발동 및 블레싱 제거 시
+        초기화)\n- 5회 사용 시 전투력의 [c][F7ACA5][@DMG]ID:329611012[@DMG][-][/c]추가 범위 피해 (해당 피해는 각 영웅한테 집계된다.)
+        <br><br> [강화II] 이클립스 블레싱
+        <br> [상시효과]\n전투 시작 시 생명속성 파티 저격/마법형 영웅 2명에게 '블레싱'을 [@BUFF_TIME]ID:3296009[@BUFF_TIME]초간 부여한다.\n생명속성 파티 영웅의 주는
+        전투력 비례 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329602001,Percent:true[@BUFF][-][/c]증가한다. (무효화 불가)\n\n[사용 효과]\n지정
+        범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329609012[@DMG][-][/c]피해를 입힌다.\n생명속성 파티 저격/마법형 영웅 2명에게 '블레싱'을
+        [@BUFF_TIME]ID:3296009[@BUFF_TIME]초간 부여한다.\n\n[블레싱]\n주는 기본 피해의
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600931,Percent:true[@BUFF][-][/c]만큼 추가피해를 입히고 적에게 주는 모든 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600932,Percent:true[@BUFF][-][/c], 생명력이 70%이하인 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329600933,Percent:true[@BUFF][-][/c]증가한다.\n스킬 사용 시 다음 효과가 적용된다.\n- 극대화
+        확률 [c][74DBBC][@BUFF]Category:eStat,ID:329601701,Percent:true[@BUFF][-][/c]증가 (최대 100%, 극대화 발동 및 블레싱 제거 시
+        초기화)\n- 5회 사용 시 전투력의 [c][F7ACA5][@DMG]ID:329611012[@DMG][-][/c]추가 범위 피해 (해당 피해는 각 영웅한테 집계된다.)
         <br><br> <br><br>
         <br><br> 기억의 각인
-        <br> [상시 효과]<br>'모이라이'의 20회 효과가 강화되어 조율속성에게 주는 모든 피해를
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227004031,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[각인]<br>능력 강화 :
-        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003801,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>'모이라이'의 20회 효과가 강화되어 조율속성에게 주는 모든 피해를
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227004031,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[각인]<br>능력 강화 :
-        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003801,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>'모이라이'의 20회 효과가 강화되어 조율속성에게 주는 모든 피해를
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227004031,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[각인]<br>능력 강화 :
-        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003801,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>'모이라이'의 20회 효과가 강화되어 조율속성에게 주는 모든 피해를
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227004031,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[각인]<br>능력 강화 :
-        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003801,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>'모이라이'의 20회 효과가 강화되어 조율속성에게 주는 모든 피해를
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227004031,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[각인]<br>능력 강화 :
-        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>모든 조율속성 적이 받는 치명타 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227003801,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br> [각인] 루프드 신
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [상시 효과]<br>'루프'가 강화되어 마법 공격력의 [c][F7ACA5][@BUFF]Category:eDot,ID:227004811,Percent:true[@BUFF][-][/c]피해를
-        입히고
-        최대 10회까지 부여된다.<br>전투 중인 조율속성 적이 5명이상이라면 2초 마다 모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:227042012[@DMG][-][/c]피해를
-        입힌다.<br><br>[사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br> [사용 효과]<br>'루프드 신'이 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227043012[@DMG][-][/c]범위 피해를 2회 입히고 피해를 입은 적이
-        [@BUFF_TIME]ID:2270057[@BUFF_TIME]초 동안 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:227005701,Percent:true[@BUFF][-][/c]씩 증가시킨다. (최대
-        [@BUFF]Category:eStat,ID:227005701,MaxStack:true,Percent:true[@BUFF])
-        <br><br> [각인] 로스트 스핀
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.<br>조율속성 적이 사망할 때마다 스킬 쿨타임이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006132,Percent:false[@BUFF][-][/c]초씩 감소하고
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006131,Percent:false[@BUFF][-][/c]체이서 자원을 획득한다.<br><br>[사용
-        효과]<br>'로스트 스핀'이
-        강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:227044012[@DMG][-][/c]피해를 입히고 피해를 입은 '루프'상태의 적이
-        [@BUFF_TIME]ID:2270058[@BUFF_TIME]초간 '그랑디엘(T)'에게 받는 피해를
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:227005831,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br> [상시 효과]<br>자신의 스킬 효과로 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227006331,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br> [각인] 액시스 루인
-        <br> [상시 효과]<br>'모이라이'가 강화되어 스킬 50회 사용 시 주는 최종 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:227006801,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용 효과]<br>'액시스 루인'이 강화되어
-        마법
-        공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.<br><br>[각인]<br>'액시스 루인'의 추가 피해가 강화되어 동일한 대상에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227053011[@DMG][@PERDMG][-][/c]피해를 추가로 입힌다.
-        <br> [상시 효과]<br>'모이라이'가 강화되어 스킬 50회 사용 시 주는 최종 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:227006801,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용 효과]<br>'액시스 루인'이 강화되어
-        마법
-        공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.<br><br>[각인]<br>'액시스 루인'의 추가 피해가 강화되어 동일한 대상에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227053011[@DMG][@PERDMG][-][/c]피해를 추가로 입힌다.
-        <br> [상시 효과]<br>'모이라이'가 강화되어 스킬 50회 사용 시 주는 최종 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:227006801,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용 효과]<br>'액시스 루인'이 강화되어
-        마법
-        공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.<br><br>[각인]<br>'액시스 루인'의 추가 피해가 강화되어 동일한 대상에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227053011[@DMG][@PERDMG][-][/c]피해를 추가로 입힌다.
-        <br> [상시 효과]<br>'모이라이'가 강화되어 스킬 50회 사용 시 주는 최종 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:227006801,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용 효과]<br>'액시스 루인'이 강화되어
-        마법
-        공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.<br><br>[각인]<br>'액시스 루인'의 추가 피해가 강화되어 동일한 대상에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227053011[@DMG][@PERDMG][-][/c]피해를 추가로 입힌다.
-        <br> [상시 효과]<br>'모이라이'가 강화되어 스킬 50회 사용 시 주는 최종 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:227006801,Percent:true[@BUFF][-][/c]증가시킨다.<br><br>[사용 효과]<br>'액시스 루인'이 강화되어
-        마법
-        공격력의 [c][F7ACA5][@DMG]ID:227049012[@DMG][-][/c]피해를 입힌다.<br><br>[각인]<br>'액시스 루인'의 추가 피해가 강화되어 동일한 대상에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227053011[@DMG][@PERDMG][-][/c]피해를 추가로 입힌다.
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n스킬 효과로 파티 영웅의 최대 생명력을 넘겨 회복 시, 초과한 회복량만큼의 보호막을
+        [@BUFF_TIME]ID:3296024[@BUFF_TIME]초간 부여한다. (보호막은 대상 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329602451,Percent:true[@BUFF][-][/c]를 초과하지 않는다.)\n스킬 5회 사용 시, 생명속성 파티 영웅의
+        이동속도가 [@BUFF_TIME]ID:3296026[@BUFF_TIME]초간
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602601,Percent:true[@BUFF][-][/c]증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n파티 영웅의 받는 회복량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602701,Percent:true[@BUFF][-][/c]증가한다.\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n스킬 효과로 파티 영웅의 최대 생명력을 넘겨 회복 시, 초과한 회복량만큼의 보호막을
+        [@BUFF_TIME]ID:3296024[@BUFF_TIME]초간 부여한다. (보호막은 대상 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329602451,Percent:true[@BUFF][-][/c]를 초과하지 않는다.)\n스킬 5회 사용 시, 생명속성 파티 영웅의
+        이동속도가 [@BUFF_TIME]ID:3296026[@BUFF_TIME]초간
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602601,Percent:true[@BUFF][-][/c]증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n파티 영웅의 받는 회복량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602701,Percent:true[@BUFF][-][/c]증가한다.\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n스킬 효과로 파티 영웅의 최대 생명력을 넘겨 회복 시, 초과한 회복량만큼의 보호막을
+        [@BUFF_TIME]ID:3296024[@BUFF_TIME]초간 부여한다. (보호막은 대상 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329602451,Percent:true[@BUFF][-][/c]를 초과하지 않는다.)\n스킬 5회 사용 시, 생명속성 파티 영웅의
+        이동속도가 [@BUFF_TIME]ID:3296026[@BUFF_TIME]초간
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602601,Percent:true[@BUFF][-][/c]증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n파티 영웅의 받는 회복량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602701,Percent:true[@BUFF][-][/c]증가한다.\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n스킬 효과로 파티 영웅의 최대 생명력을 넘겨 회복 시, 초과한 회복량만큼의 보호막을
+        [@BUFF_TIME]ID:3296024[@BUFF_TIME]초간 부여한다. (보호막은 대상 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329602451,Percent:true[@BUFF][-][/c]를 초과하지 않는다.)\n스킬 5회 사용 시, 생명속성 파티 영웅의
+        이동속도가 [@BUFF_TIME]ID:3296026[@BUFF_TIME]초간
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602601,Percent:true[@BUFF][-][/c]증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n파티 영웅의 받는 회복량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602701,Percent:true[@BUFF][-][/c]증가한다.\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br> [상시 효과]\n전투 시작 시, '썬샤인'효과가 발동한다. \n스킬 효과로 파티 영웅의 최대 생명력을 넘겨 회복 시, 초과한 회복량만큼의 보호막을
+        [@BUFF_TIME]ID:3296024[@BUFF_TIME]초간 부여한다. (보호막은 대상 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329602451,Percent:true[@BUFF][-][/c]를 초과하지 않는다.)\n스킬 5회 사용 시, 생명속성 파티 영웅의
+        이동속도가 [@BUFF_TIME]ID:3296026[@BUFF_TIME]초간
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602601,Percent:true[@BUFF][-][/c]증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n파티 영웅의 받는 회복량이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329602701,Percent:true[@BUFF][-][/c]증가한다.\n'썬샤인' 발동 시, 모든 효과가 1.5배로 적용된다.\n
+        <br><br> [각인] 홀리 웨이브
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소하고
+        주는 스킬 치명타 피해가 [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리
+        웨이브'가 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은
+        [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n주는 스킬 치명타 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은 [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게
+        받는 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소하고
+        주는 스킬 치명타 피해가 [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리
+        웨이브'가 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은
+        [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n주는 스킬 치명타 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은 [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게
+        받는 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소하고
+        주는 스킬 치명타 피해가 [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리
+        웨이브'가 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은
+        [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n주는 스킬 치명타 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은 [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게
+        받는 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소하고
+        주는 스킬 치명타 피해가 [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리
+        웨이브'가 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은
+        [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n주는 스킬 치명타 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은 [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게
+        받는 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n생명속성 파티 영웅은 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329603101,Percent:true[@BUFF][-][/c]감소하고
+        주는 스킬 치명타 피해가 [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리
+        웨이브'가 강화되어 마법 공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은
+        [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 마법 공격력의
+        [c][74DBBC][@DMG]ID:329614022[@DMG][-][/c]만큼 3회 회복하고 [@BUFF_TIME]ID:3296036[@BUFF_TIME]초간 주는 물리 치명타피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603632,Percent:true[@BUFF][-][/c], 마법형에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329603601,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n주는 스킬 치명타 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603331,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'홀리 웨이브'가 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329614012[@DMG][-][/c]피해를 3회 입히고 피해를 입은 적은 [@BUFF_TIME]ID:3296035[@BUFF_TIME]초간 저격형에게
+        받는 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:329603501,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br> [각인] 디바인 오브
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'디바인 오브'가 강화되어 모든
+        파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상 파티 영웅에게
+        [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'디바인 오브'가 강화되어 모든
+        파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상 파티 영웅에게
+        [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'디바인 오브'가 강화되어 모든
+        파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상 파티 영웅에게
+        [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'디바인 오브'가 강화되어 모든
+        파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상 파티 영웅에게
+        [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.\n\n[사용 효과]\n'디바인 오브'가 강화되어 모든
+        파티 영웅에게 투사체를 발사하여 경로상의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329616025[@DMG][-][/c]피해를 입힌다. 대상 파티 영웅에게
+        [@BUFF_TIME]ID:3296039[@BUFF_TIME]초간 '헌신'을 부여하고 전이되지 않는다.\n\n[헌신]\n부여 시 '데아(T)' 마법공격력의
+        [c][74DBBC][@DMG]ID:329617012[@DMG][-][/c]만큼 범위 회복이 발생한다.\n보호막 보유중 적에게 주는 피해가
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329603931,Percent:true[@BUFF][-][/c]증가한다.
+        <br> [상시 효과]\n'디바인 오브'에 피해를 입은 적은 [@BUFF_TIME]ID:3296038[@BUFF_TIME]초간 받는 치명타 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329603801,Percent:true[@BUFF][-][/c]증가한다.\n생명속성 파티 영웅은 매 초 남은 스킬 재사용 시간이
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329606731,Percent:true[@BUFF][-][/c]감소한다.
+        <br><br> [각인] 이클립스 블레싱
+        <br> [상시 효과]\n'블레싱'이 부여된 영웅에게 피해를 받은 적은 [@BUFF_TIME]ID:3296041[@BUFF_TIME]초간 파티 영웅에게 받는 모든 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329604131,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 주는 이로운 효과의 유지시간이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604301,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'이클립스 블레싱'이 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회 받거나 사망 시, '낙인'이 제거되고
+        생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
+        <br> [상시 효과]\n'블레싱'이 부여된 영웅에게 피해를 받은 적은 [@BUFF_TIME]ID:3296041[@BUFF_TIME]초간 파티 영웅에게 받는 모든 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329604131,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 주는 이로운 효과의 유지시간이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604301,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'이클립스 블레싱'이 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회 받거나 사망 시, '낙인'이 제거되고
+        생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
+        <br> [상시 효과]\n'블레싱'이 부여된 영웅에게 피해를 받은 적은 [@BUFF_TIME]ID:3296041[@BUFF_TIME]초간 파티 영웅에게 받는 모든 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329604131,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 주는 이로운 효과의 유지시간이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604301,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'이클립스 블레싱'이 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회 받거나 사망 시, '낙인'이 제거되고
+        생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
+        <br> [상시 효과]\n'블레싱'이 부여된 영웅에게 피해를 받은 적은 [@BUFF_TIME]ID:3296041[@BUFF_TIME]초간 파티 영웅에게 받는 모든 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329604131,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 주는 이로운 효과의 유지시간이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604301,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'이클립스 블레싱'이 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회 받거나 사망 시, '낙인'이 제거되고
+        생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
+        <br> [상시 효과]\n'블레싱'이 부여된 영웅에게 피해를 받은 적은 [@BUFF_TIME]ID:3296041[@BUFF_TIME]초간 파티 영웅에게 받는 모든 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329604131,Percent:true[@BUFF][-][/c]증가한다.\n파티 영웅은 주는 이로운 효과의 유지시간이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604301,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'이클립스 블레싱'이 강화되어 마법
+        공격력의 [c][F7ACA5][@DMG]ID:329618012[@DMG][-][/c]피해를 입히고 '낙인'을 부여한다. '낙인'을 보유한 적이 피해를 20회 받거나 사망 시, '낙인'이 제거되고
+        생명속성 파티 영웅은 [@BUFF_TIME]ID:3296047[@BUFF_TIME]초간 주는 전투력 비례 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604701,Percent:true[@BUFF][-][/c]추가 증가한다.
         <br><br> <br><br>
-        <br><br> 로타 포르투나
-        <br> [상시 효과]<br>'모이라이'의 이로운 효과가 자신을 제외한 공격력이 높은 생명속성 파티 영웅 1명에게 함께 부여된다.<br><br>[사용 효과]<br>지정한 적 1명에게 마법 공격력의
-        [c][F7ACA5][@DMG]ID:227057012[@DMG][-][/c]범위 피해를 입힌다.
+        <br><br> 문 레버레이션
+        <br> [상시 효과]\n적에게 피해를 입힐 때마다 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604801,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604802,Percent:false[@BUFF][-][/c]증가한다.(무효화 불가, 25중첩)\n\n[사용 효과]\n파티 영웅의
+        생명력을 대상 최대 생명력의 [c][74DBBC][@DMG]ID:329620012[@DMG][-][/c]만큼 회복시키고, 생명속성이라면 [@BUFF_TIME]ID:3296062[@BUFF_TIME]초간
+        아래 효과를 부여한다.\n- 마법형에게 주는 피해 [c][74DBBC][@BUFF]Category:eStat,ID:329604901,Percent:true[@BUFF][-][/c]증가\n-
+        [c][F7ACA5]파괴력[-][/c] [c][74DBBC][@BUFF]Category:eStat,ID:329604902,Percent:false[@BUFF][-][/c]증가\n- 매 초 최대 생명력의
+        [c][74DBBC][@DMG]ID:329621012[@DMG][-][/c]회복
         <br><br> 5단계 성장 효과
-        <br> 스킬을 5회 사용할 때마다 [c][F7ACA5]파괴력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:227007501,Percent:false[@BUFF][-][/c]씩 증가한다. (최대
-        [@BUFF]Category:eStat,ID:227007501,MaxStack:true,Percent:false[@BUFF])<br>'페이트 크래시' 사용 시, 파티 영웅이
-        [@BUFF_TIME]ID:2270076[@BUFF_TIME]초간 적의 공격으로 밀리는 힘이
-        [c][74DBBC][@BUFF]Category:eProperty,ID:227007631,Percent:true[@BUFF][-][/c]감소한다.<br>'액시스 루인' 사용 시, 15초간 근접한 적이
-        '그랑디엘(T)'의 스킬 효과로 받는 피해가 [c][F7ACA5][@BUFF]Category:eProperty,ID:227007831,Percent:true[@BUFF][-][/c]증가한다. (무효화
-        불가)
-        <br><br> [강화] 로타 포르투나
-        <br> [상시 효과]<br>'모이라이'의 이로운 효과가 자신을 제외한 공격력이 높은 생명속성 파티 영웅 1명에게 함께 부여된다.<br><br>[사용 효과]<br>지정한 적 1명에게 마법 공격력의
-        지정한 적 1명에게
-        마법 공격력의 [c][F7ACA5][@DMG]ID:227057012,SaintLvBaseID:1898001[@DMG][-][/c]범위 피해를 입힌다. '루프'가 부여된 적이 피해를 입었다면 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:227061012[@DMG][@PERDMG][-][/c]추가 범위 피해를 입힌다.
+        <br> 생명속성 파티 영웅의 물리/마법 공격력이 [c][74DBBC][@BUFF]Category:eStat,ID:329602901,Percent:true[@BUFF][-][/c]증가한다.\n최대
+        생명력이 가장 높은 아군 영웅에게 근접한 적은 아래 효과가 부여된다.\n- 주는 기본/스킬 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329605001,Percent:true[@BUFF][-][/c]감소\n- 받는 보호막
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329605003,Percent:true[@BUFF][-][/c]감소
+        <br><br> [강화] 문 레버레이션
+        <br> [상시 효과]\n적에게 피해를 입힐 때마다 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604801,SaintLvBaseID:2883001,Percent:false[@BUFF][-][/c],
+        [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604802,SaintLvBaseID:2883001,Percent:false[@BUFF][-][/c]증가한다.(무효화 불가,
+        25중첩)\n적에게 피해를 20회 입힐 때 마다 파티 영웅에게 부여된 '문 레버레이션' 효과의 유지시간이 1초 증가한다.\n\n[사용 효과]\n파티 영웅의 생명력을 대상 최대 생명력의
+        [c][74DBBC][@DMG]ID:329620012,SaintLvBaseID:2883001[@DMG][-][/c]만큼 회복시키고, 생명속성이라면
+        [@BUFF_TIME]ID:3296062[@BUFF_TIME]초간 아래 효과를 부여한다.\n- 마법형에게 주는 피해
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604901,SaintLvBaseID:2883001,Percent:true[@BUFF][-][/c]증가\n-
+        [c][F7ACA5]파괴력[-][/c]
+        [c][74DBBC][@BUFF]Category:eStat,ID:329604902,SaintLvBaseID:2883001,Percent:false[@BUFF][-][/c]증가\n- 매 초 최대 생명력의
+        [c][74DBBC][@DMG]ID:329621012,SaintLvBaseID:2883001[@DMG][-][/c]회복\n- 주는 스킬 피해
+        [c][74DBBC][@BUFF]Category:eStat,ID:329605201,Percent:true[@BUFF][-][/c]추가 증가\n- 적에게 피해를 20회 입힐 시 전투력의
+        [c][F7ACA5][@DMG]ID:329623014[@DMG][-][/c]추가 피해 4회 (재사용 1초, 해당 피해는 각 영웅한테 집계된다.)
         <br><br> 10단계 성장 효과
-        <br> [c][F7ACA5]파괴력[-][/c]이 전투 중인 생명속성 파티 영웅의
-        수X[c][74DBBC][@BUFF]Category:eStat,ID:227008001,Percent:false[@BUFF][-][/c]씩 증가한다.<br>스킬 극대화 발동 시, 최대 생명력이 높은 파티
-        영웅 위치로 모든 적을 끌어모으며 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:227063012[@DMG][@PERDMG][-][/c]피해를 입힌다. (재사용 4초)
+        <br> 생명속성 파티 영웅의 주는 기본 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:329606501,Percent:true[@BUFF][-][/c]추가
+        증가한다.\n'블레싱'을 가진 영웅의 극대화 발생 시, [@BUFF_TIME]ID:3296058[@BUFF_TIME]초간 '문 레버레이션'의 추가 피해가
+        [c][F7ACA5][@DMG]ID:329624014[@DMG][-][/c]범위피해로 변경된다. (재사용 15초)
         <br><br> <br><br>
-
-
-
-
-
-
-
     </div>
     <div id="text1" style="background-color:#3D3D3D; color:#EEEEEE;">
         <h2>Pet</h2>
         <br><br> 기본 공격
-        <br> 공격력이 높은 적 1명에게 피해를 입힌다.
-        <br> 공격력이 높은 적 1명에게 마법 공격력의 [c][F7ACA5][@DMG]ID:235401014[@DMG][-][/c]피해를 입힌다.
-        <br><br> 프리딕션
-        <br> 지정 범위의 적에게 피해를 입힌다.
-        <br> 지정 범위의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:235402012[@DMG][-][/c]피해를 입힌다.<br>'그랑디엘(T)'가 마지막으로 사용한 액티브 스킬의 남은
-        재사용
-        시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:235400131,Percent:true[@BUFF][-][/c]감소한다.
+        <br> 근접한 적 1명에게 피해를 입힌다.
+        <br> 근접한 적 1명에게 마법공격력의 [c][F7ACA5][@DMG]ID:329701014[@DMG][-][/c]피해를 입힌다.
+        <br><br> 홀리 하울링
+        <br> 파티 영웅의 생명력을 회복 시킨다.
+        <br> 파티 영웅의 생명력을 마법 공격력의 [c][74DBBC][@DMG]ID:329702012[@DMG][-][/c]만큼 회복시킨다.\n'데아T'와 함께 전투 시, '데아T'의 주는 보호막이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329700101,Percent:true[@BUFF][-][/c]추가 증가한다.
     </div>
     <script>
         function R(text) {
