@@ -32,226 +32,64 @@
 
 <body>
     <div id="text" style="background-color:#3D3D3D; color:#EEEEEE;">
-        <br><br>기본 공격
-        <br><br>화형 집행
-        <br>지정 범위에 큰 피해를 입힌다.
-        <br>[c][F7ACA5]#범위공격[-][/c]
-        <br>지정 범위에 폭발을 일으켜 마법 공격력의 [c][F7ACA5][@DMG]ID:331504012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331504022[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br><br>교화의 장
-        <br>주변 적에게 지속 피해를 주고 받는 마법 피해를 증가시킨다.
-        <br>[c][F7ACA5]#주변지속피해[-][/c]
-        <br>[@BUFF_TIME]ID:3315003[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 마법 공격력의 [c][F7ACA5][@DMG]ID:331506012[@DMG][-][/c]피해를
-        입히고 피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331500401,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br><br>종말의 계시
-        <br>모든 적에게 지속 피해를 주고 '이단'을 선고한다.
-        <br>전체 범위에 마법 공격력의 [c][F7ACA5][@DMG]ID:331508012[@DMG][-][/c]피해를 입히고 이후 [@BUFF_TIME]ID:3315005[@BUFF_TIME]초간 모든
-        적들에게 초당 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331510012[@DMG][@PERDMG][-][/c]피해를 2회 입히며 ‘이단’으로 선고한다.
-        <br><br>이단 심판관
-        <br>지정 범위에 큰 피해를 입혀 '이단'을 처벌한다.
-        <br>[c][F7ACA5]#범위공격[-][/c]
-        <br>지정 범위에 마법 공격력의 [c][F7ACA5][@DMG]ID:331514012[@DMG][-][/c]범위 피해를 입힌다.<br>'이단' 대상에게 '심판'을 내려 '이단' 선고를 해제 시키고
-        전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331514022[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.
-        <br><br>기억의 각인
-        <br>강화된 기본 공격으로 '이단' 공격 시 스킬의 남은 재사용이 감소한다.
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF]씩 감소한다. (재사용 0.5초)
-        <br><br>[각인] 화형 집행
-        <br>지정 범위에 큰 피해를 입히고 '이단'에게 공격을 확산한다.
-        <br>[c][F7ACA5]#범위공격[-][/c] [c][F7ACA5]#주변공격확산[-][/c]
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 한 발당 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331528012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br><br>[각인] 교화의 장
-        <br>주변 적에게 지속 피해를 주고 받는 마법 피해를 증가시킨다.
-        <br>[c][F7ACA5]#주변지속피해[-][/c]
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501501,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br><br>[각인] 이단 심판관
-        <br>지정 범위에 큰 피해를 입혀 '이단'을 처벌하며 천사를 소환 시킨다.
-        <br>[c][F7ACA5]#범위공격[-][/c] [c][F7ACA5]#소환체[-][/c]
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>돌진
-        공격 3회 시 소멸한다.
-        <br><br>절대자의 심판
-        <br>지정 범위에 큰 피해를 입혀 '이단'을 처벌하며 천사를 본모습으로 강림 시킨다.
-        <br>[c][F7ACA5]#범위공격[-][/c] [c][F7ACA5]#소환체[-][/c]
-        <br>천사를 본모습으로 강림시켜 지정 위치에 마법 공격력의 [c][F7ACA5][@DMG]ID:331537012[@DMG][-][/c]피해를 입히고,
-        [@BUFF_TIME]ID:3332001[@BUFF_TIME]초간 세상의 이교도를 멸한다. 강림 피해 및 본모습의 모든 공격은 '이단' 대상에게 '심판'을 내려 '이단' 선고를 해제시키고 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331541011[@DMG][@PERDMG][-][/c]피해를 입힌다.<br><br>[본모습]<br>모든 적에게 초당 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331538012[@DMG][@PERDMG][-][/c]피해를 입히고, '[@CHARNAME]ID:3315[@CHARNAME]'의 파괴력을
-        [c][74DBBC][@BUFF]Category:eStat,ID:331502201,Percent:false[@BUFF][-][/c]상승 시킨다.<br>할퀴기 - 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333203012,333204012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 - 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333206012[@DMG][-][/c]범위 피해를 입힌다.
-        <br><br>라임S 분신용 - 이단 심판관(돌진 연출)
+        <br><br>세이비어 스피릿
+        <br>전방 적에게 큰 피해를 주고 아군에게 이로운 효과를 부여한다.
+        <br>[c][F7ACA5]#범위공격[-][/c] [c][74DBBC]#파티보호[-][/c]
+        <br>[상시 효과]<br>'보호의 고리'로 연결된 대상의 생명력이 20%이하로 감소될 때, '보호의 고리' 지속시간을 갱신한 뒤 5초간 '보호의 고리'로 나눠 받는 피해량을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:43307933,Percent:true[@BUFF][-][/c]로 만들고, 적에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307901,Percent:true[@BUFF][-][/c]추가 감소시킨다. (아군 별 전투 중 1회 발동)<br><br>[사용
+        효과]<br>지정 방향의 적에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:43328012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>라이언은
+        [@BUFF_TIME]ID:433074[@BUFF_TIME]초간 피해를 입을 때 마다 파티 영웅에게 자신 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:43307551,Percent:true[@BUFF][-][/c]보호막을 부여한다. (재사용 1초)<br>파티 '보호의 고리' 대상자는
+        [@BUFF_TIME]ID:433076[@BUFF_TIME]초간 [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307603,Percent:false[@BUFF][-][/c]증가하고, 주는 기본/스킬 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:43307601,Percent:true[@BUFF][-][/c]추가 증가한다.
         <br><br><br><br>
-        <br><br>구원의 고통
-        <br>적을 공격해 '회개'시키고 '이단'을 선고한다.
-        <br>'[@CHARNAME]ID:3315[@CHARNAME]'의 공격에 피해를 받은 적은 [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태가 되며 초당 마법 공격력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:331500111,Percent:true[@BUFF][-][/c]피해를 받는다.<br>'회개' 상태에서
-        '[@CHARNAME]ID:3315[@CHARNAME]'에게 피격을 받으면 10% 확률로 [@BUFF_TIME]ID:3315002[@BUFF_TIME]초간 '이단'으로 선고되며, 초당 마법 피해가
-        [c][F7ACA5][@BUFF]Category:eDot,ID:331500211,Percent:true[@BUFF][-][/c]로 강화된다.<br>('회개'와 '이단' 효과는 무효화되지 않는다.)
-        <br><br><br><br>
-        <br><br>[강화I] 이단 심판관
-        <br><br>[강화I] 이단 심판관
-        <br>지정 범위에 마법 공격력의 [c][F7ACA5][@DMG]ID:331514012[@DMG][-][/c]범위 피해를 입힌다.<br>'이단' 대상에게 '심판'을 내려 '이단' 선고를 해제 시키고
-        전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331514022[@DMG][@PERDMG][-][/c] 추가 피해를 입힌다.<br>'이단' 대상 공격 시
-        [@BUFF_TIME]ID:3315010[@BUFF_TIME]초간 주는 공격력 비례 피해량이 '이단'공격 대상 수 x
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501001,Percent:true[@BUFF][-][/c](최대
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501001,MaxStack:true,Percent:true[@BUFF][-][/c]) 추가 증가한다.(이 효과는 무효화되지
-        않는다.)
-        <br><br>[강화II] 이단 심판관
-        <br>[상시 효과]<br>파티원들이 '회개'또는 '이단'대상에 주는 피해가
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501131,Percent:true[@BUFF][-][/c]증가한다.<br><br>[사용 효과]<br>지정 범위에 마법
-        공격력의 [c][F7ACA5][@DMG]ID:331514012[@DMG][-][/c]범위 피해를 입힌다.<br>'이단' 대상에게 '심판'을 내려 '이단' 선고를 해제 시키고 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331514022[@DMG][@PERDMG][-][/c] 추가 피해를 입힌다.<br>'이단' 대상 공격 시
-        [@BUFF_TIME]ID:3315010[@BUFF_TIME]초간 주는 공격력 비례 피해량이 '이단'공격 대상 수 x
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501001,Percent:true[@BUFF][-][/c](최대
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501001,MaxStack:true,Percent:true[@BUFF][-][/c]) 추가 증가한다.(이 효과는 무효화되지
-        않는다.)
-        <br><br><br><br>
-        <br><br>기억의 각인
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF][-][/c]씩 감소한다.
-        (재사용 0.5초)<br>각인 상태에서 새로운 '생명' 적이 등장하면
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501331,Percent:true[@BUFF][-][/c]확률로 대상을
-        [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태로 만든다.
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF][-][/c]씩 감소한다.
-        (재사용 0.5초)<br>각인 상태에서 새로운 '생명' 적이 등장하면
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501331,Percent:true[@BUFF][-][/c]확률로 대상을
-        [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태로 만든다.
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF][-][/c]씩 감소한다.
-        (재사용 0.5초)<br>각인 상태에서 새로운 '생명' 적이 등장하면
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501331,Percent:true[@BUFF][-][/c]확률로 대상을
-        [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태로 만든다.
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF][-][/c]씩 감소한다.
-        (재사용 0.5초)<br>각인 상태에서 새로운 '생명' 적이 등장하면
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501331,Percent:true[@BUFF][-][/c]확률로 대상을
-        [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태로 만든다.
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105504,Percent:false[@BUFF][-][/c],
-        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105501,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105502,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105503,Percent:false[@BUFF][-][/c]<br>각인 시 기본 공격의 피해 범위가 증가하며, 기본 공격으로
-        '이단' 대상을 공격하면 스킬 남은 재사용 시간이 [c][74DBBC][@BUFF]Category:eProperty,ID:331501231,Percent:true[@BUFF][-][/c]씩 감소한다.
-        (재사용 0.5초)<br>각인 상태에서 새로운 '생명' 적이 등장하면
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:331501331,Percent:true[@BUFF][-][/c]확률로 대상을
-        [@BUFF_TIME]ID:3315001[@BUFF_TIME]초간 '회개' 상태로 만든다.
-        <br><br>[각인] 화형 집행
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br>'이단' 대상에게는 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br>'이단' 대상에게는 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br>'이단' 대상에게는 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br>'이단' 대상에게는 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br>지정 범위에 화형 불꽃을 6발 쏘아 마법 공격력의 [c][F7ACA5][@DMG]ID:331526012[@DMG][-][/c]범위 피해를 입힌다. 이때 '이단' 대상에게는 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>'이단' 대상에게 화형 불꽃 1발을 추가 발사(최대 15발)한다.
-        <br>'이단' 대상에게는 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331529012[@DMG][@PERDMG][-][/c]피해를 입힌다.
-        <br><br>[각인] 교화의 장
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>[@BUFF_TIME]ID:3315014[@BUFF_TIME]초간 자신 주변 넓은 범위에 초당 2회의 마법 공격력의
-        [c][F7ACA5][@DMG]ID:331534012[@DMG][-][/c]피해를 입히고 피격 대상에게 받는 마법 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br>피격 대상에게 받는 마법 피해를 [c][F7ACA5][@BUFF]Category:eStat,ID:331501601,Percent:true[@BUFF][-][/c]추가 증가시킨다.
-        <br><br>[각인] 이단 심판관
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>지속
-        피해 - 초당 적들에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:333108012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>돌진 공격 3회 시 소멸한다.
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>지속
-        피해 - 초당 적들에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:333108012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>돌진 공격 3회 시 소멸한다.
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>지속
-        피해 - 초당 적들에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:333108012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>돌진 공격 3회 시 소멸한다.
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>지속
-        피해 - 초당 적들에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:333108012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>돌진 공격 3회 시 소멸한다.
-        <br>'이단 심판관' 사용 이후 천사를 소환하여 적들을 처단한다. (천사의 피해는 '이단 심판관'에 집계된다.)<br><br>[천사]<br>기본 공격 – 2초마다 근접한 적을 공격하여 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333101012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 공격 – 5초마다 공격력이 높은 대상에게 날아들어 체이서 피해를 한 번 더 입힌다.<br>지속
-        피해 - 초당 적들에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:333108012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>돌진 공격 3회 시 소멸한다.
-        <br><br><br><br>
-        <br><br>절대자의 심판
-        <br>천사를 본모습으로 강림시켜 지정 위치에 마법 공격력의 [c][F7ACA5][@DMG]ID:331537012[@DMG][-][/c]피해를 입히고,
-        [@BUFF_TIME]ID:3332001[@BUFF_TIME]초간 세상의 이교도를 멸한다. 강림 피해 및 본모습의 모든 공격은 '이단' 대상에게 '심판'을 내려 '이단' 선고를 해제시키고 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331541011[@DMG][@PERDMG][-][/c]피해를 입힌다.<br><br>[본모습]<br>모든 적에게 초당 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331538012[@DMG][@PERDMG][-][/c]피해를 입히고, '[@CHARNAME]ID:3315[@CHARNAME]'의 파괴력을
-        [c][74DBBC][@BUFF]Category:eStat,ID:331502201,Percent:false[@BUFF][-][/c]상승 시킨다.<br>할퀴기 - 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333203012,333204012[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 - 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333206012[@DMG][-][/c]범위 피해를 입힌다.
+        <br><br>세이비어 스피릿
+        <br>[상시 효과]<br>'보호의 고리'로 연결된 대상의 생명력이 20%이하로 감소될 때, '보호의 고리' 지속시간을 갱신한 뒤 5초간 '보호의 고리'로 나눠 받는 피해량을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:43307933,Percent:true[@BUFF][-][/c]로 만들고, 적에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307901,Percent:true[@BUFF][-][/c]추가 감소시킨다. (아군 별 전투 중 1회 발동)<br><br>[사용
+        효과]<br>지정 방향의 적에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:43328012[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>라이언은
+        [@BUFF_TIME]ID:433074[@BUFF_TIME]초간 피해를 입을 때 마다 파티 영웅에게 자신 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:43307551,Percent:true[@BUFF][-][/c]보호막을 부여한다. (재사용 1초, 무효화 불가)<br>파티 '보호의
+        고리' 대상자는 [@BUFF_TIME]ID:433076[@BUFF_TIME]초간 [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307603,Percent:false[@BUFF][-][/c]증가하고, 주는 기본/스킬 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:43307601,Percent:true[@BUFF][-][/c]추가 증가한다.
         <br><br>5단계 성장 효과
-        <br>'이단' 대상에게 심판을 내릴 때마다 파괴력이 [c][74DBBC][@BUFF]Category:eStat,ID:331501802,Percent:false[@BUFF][-][/c]씩(최대
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501802,MaxStack:true,Percent:false[@BUFF][-][/c]) 증가하고,<br>치명타 발생 확률이
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501801,Percent:true[@BUFF][-][/c]씩(최대
-        [c][74DBBC][@BUFF]Category:eStat,ID:331501801,MaxStack:true,Percent:true[@BUFF][-][/c])까지 상승한다.(이 효과는 무효화되지
-        않는다.)
-        <br><br>[강화] 절대자의 심판
-        <br>천사를 본모습으로 강림시켜 지정 위치에 마법 공격력의 [c][F7ACA5][@DMG]ID:331537012,SaintLvBaseID:2902001[@DMG][-][/c]피해를 입히고,
-        [@BUFF_TIME]ID:3332001,SaintLvBaseID:2902001[@BUFF_TIME]초간 세상의 이교도를 멸한다. 강림 피해 및 본모습의 모든 공격은 '이단' 대상에게 '심판'을 내려
-        '이단' 선고를 해제시키고 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:331541011,SaintLvBaseID:2902001[@DMG][@PERDMG][-][/c]피해와 함께 마법
-        공격력의 [c][F7ACA5][@DMG]ID:331540012[@DMG][-][/c]범위 피해를 추가로 발생시킨다.<br><br>[본모습]<br>모든 적에게 초당 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:331538012,SaintLvBaseID:2902001[@DMG][@PERDMG][-][/c]피해를 입히고,
-        '[@CHARNAME]ID:3315[@CHARNAME]'의 파괴력을
-        [c][74DBBC][@BUFF]Category:eStat,ID:331502201,SaintLvBaseID:2902001,Percent:false[@BUFF][-][/c]상승 시킨다.<br>할퀴기 -
-        마법 공격력의 [c][F7ACA5][@DMG]ID:333203012,333204012,SaintLvBaseID:2902001[@DMG][-][/c]범위 피해를 입힌다.<br>돌진 - 마법 공격력의
-        [c][F7ACA5][@DMG]ID:333206012,SaintLvBaseID:2902001[@DMG][-][/c]범위 피해를 입힌다.
+        <br>파티 영웅의 [c][74DBBC]수호력[-][/c]이 [c][74DBBC][@BUFF]Category:eStat,ID:43307801,Percent:false[@BUFF][-][/c]증가하고,
+        아군이 부여하는 '주는 물리 피해 증가'와 '받는 물리 피해 증가'의 효과 값을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:43307832,Percent:true[@BUFF][-][/c]증폭시킨다.<br>업화 속성 적이 생명력이 80%이하인 아군에게
+        주는
+        피해를 [c][F7ACA5][@BUFF]Category:eProperty,ID:43307231,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br><br>[강화] 세이비어 스피릿
+        <br>[상시 효과]<br>파티 영웅의 [c][F7ACA5]파괴력[-][/c]을
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307301,Percent:false[@BUFF][-][/c]증가시킨다.<br>전투 시작 시 20초간 '단의 영역'을
+        생성한다.<br>'보호의 고리'로 연결된 대상의 생명력이 20%이하로 감소될 때, '보호의 고리' 지속시간을 갱신한 뒤 5초간 '보호의 고리'로 나눠 받는 피해량을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:43307933,SaintLvBaseID:275001,Percent:true[@BUFF][-][/c]로 만들고, 적에게 받는
+        피해를 [c][74DBBC][@BUFF]Category:eStat,ID:43307901,SaintLvBaseID:275001,Percent:true[@BUFF][-][/c]추가 감소시킨다. (아군 별
+        전투 중 1회 발동)<br><br>[사용 효과]<br>지정 방향의 적에게 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:43328012,SaintLvBaseID:275001[@DMG][@PERDMG][-][/c]피해를 입힌다.<br>라이언은
+        [@BUFF_TIME]ID:433074[@BUFF_TIME]초간 피해를 입을 때 마다 파티 영웅에게 자신 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:43307551,Percent:true[@BUFF][-][/c]보호막을 부여한다. (재사용 1초, 무효화 불가)<br>파티 '보호의
+        고리' 대상자는 [@BUFF_TIME]ID:433076[@BUFF_TIME]초간 [c][74DBBC]수호력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:43307603,SaintLvBaseID:275001,Percent:false[@BUFF][-][/c]증가하고, 주는 기본/스킬 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:43307601,SaintLvBaseID:275001,Percent:true[@BUFF][-][/c]추가 증가한다.<br><br>20초간
+        '단의
+        영역'을 생성해 모든 적에게 다음의 효과를 부여한다.<br>- 생명력이 80%이하일 때 받는 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:43307732,Percent:true[@BUFF][-][/c]증가<br>- 받는 치명타 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:43307701,Percent:true[@BUFF][-][/c]추가 증가
         <br><br>10단계 성장 효과
-        <br>적 '회개' 및 '이단' 대상은 받는 스킬 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:331501901,Percent:true[@BUFF][-][/c]추가
-        증가한다.<br>(해당 대상이 저격형이라면 받는 스킬 피해가 [c][F7ACA5][@BUFF]Category:eStat,ID:331502001,Percent:true[@BUFF][-][/c]로
-        적용된다.)<br>(위 효과는 무효화되지 않는다.)
-        <br><br><br><br>
+        <br>라이언이 보호막을 부여할 때 마다 받는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:43308401,Percent:true[@BUFF][-][/c]추가 감소하고,
+        주는 최종 피해가 [c][74DBBC][@BUFF]Category:eStat,ID:43308402,Percent:true[@BUFF][-][/c]추가 증가한다. (최대
+        [c][74DBBC][@BUFF]Category:eProperty,ID:43308433,Percent:true[@BUFF][-][/c], 해당 효과는 아군이 사망해도 유지된다.)<br>'보호의 고리'가
+        강화되어 연결된 대상이 적을 공격할 때 마다 기본 공격의 [c][74DBBC][@BUFF]Category:eProperty,ID:43308631,Percent:true[@BUFF][-][/c]추가
+        피해가 발생한다.
+
 
     </div>
     <div id="text1" style="background-color:#3D3D3D; color:#EEEEEE;">
         <h2>Pet</h2>
-        <br><br>기본 공격
-        <br>단일 대상에게 피해를 입힌다.
-        <br>발사체를 쏘아 마법 공격의 [c][F7ACA5][@DMG]ID:331602014[@DMG][-][/c]피해를 입힌다. '[@CHARNAME]ID:3315[@CHARNAME]' 필살기'종말의
-        계시'를 사용하면 [@BUFF_TIME]ID:3316002[@BUFF_TIME]초간 파티 영웅의 마법 공격력을
-        [c][74DBBC][@BUFF]Category:eStat,ID:331600201,Percent:true[@BUFF][-][/c] 추가 상승시킨다. (이 효과는 무효화되지 않는다.)
-        <br><br>신앙 전도
-        <br>돌진해 피해를 입히고, '라임(S)'의 이로운 효과 유지시간을 증가시킨다.
-        <br>돌진 공격을 하여 마법 공격력의 [c][F7ACA5][@DMG]ID:331605014[@DMG][-][/c]범위 피해를 입힌다. 스킬 사용 시
-        [@BUFF_TIME]ID:3316003[@BUFF_TIME]초간 '[@CHARNAME]ID:3315[@CHARNAME]'의 이로운 효과 유지시간이
-        [c][74DBBC][@BUFF]Category:eStat,ID:331600301,Percent:true[@BUFF][-][/c]추가 증가하며, 주는 전투력 비례 피해량이
-        [c][F7ACA5][@BUFF]Category:eStat,ID:331600302,Percent:true[@BUFF][-][/c]추가 증가한다. (이 효과는 무효화되지 않는다.)
+
     </div>
     <script>
         function R(text) {
