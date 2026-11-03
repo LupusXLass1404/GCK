@@ -33,191 +33,334 @@
 <body>
     <div id="text" style="background-color:#3D3D3D; color:#EEEEEE;">
         <br><br>기본 공격
-        <br><br>페이스 커터
-        <br>돌진하며 적을 끌어모으고 아군에게 주는 피해를 감소시킨다.
-        <br>[c][F7ACA5]#모으기[-][/c] [c][74DBBC]#아군보호[-][/c]
-        <br>[@BUFF_TIME]ID:3575003[@BUFF_TIME]초간 파티 전체에 '카일' 최대 생명력의
-        [c][74DBBC][@BUFF]Category:eShield,ID:357500351,Percent:true[@BUFF][-][/c]보호막을 부여하고, 자신이 받는 피해를
-        [c][74DBBC][@BUFF]Category:eStat,ID:357500401,Percent:true[@BUFF][-][/c]추가 감소한다.<br>지정 방향으로 돌진하여 적을 모으고 물리 공격력의
-        [c][F7ACA5][@DMG]ID:357504012[@DMG][-][/c]피해를 입힌다.<br>피해를 입은 적은 [@BUFF_TIME]ID:3575005[@BUFF_TIME]초간 주는 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357500501,Percent:true[@BUFF][-][/c]감소한다.
-        <br><br>스위핑 소드
-        <br>제자리에서 적을 끌어모은다.
-        <br>근접한 적을 끌어모은 뒤 물리 공격력의 [c][F7ACA5][@DMG]ID:357505012,357506012[@DMG][-][/c]범위 피해를 입힌다.<br>파티 전체는
-        [@BUFF_TIME]ID:3575006[@BUFF_TIME]초간 '업화'속성에게 주는 피해가
-        [c][74DBBC][@BUFF]Category:eProperty,ID:357500631,Percent:true[@BUFF][-][/c]증가한다.
-        <br>언스테이블 리버레이션
-        <br>모든 적에게 피해를 입히고, 파티 영웅이 보스에게 주는 피해를 증가시킨다.
-        <br>모든 적에게 물리 공격력의 [c][F7ACA5][@DMG]ID:357507012[@DMG][-][/c]피해를 입히고, 피해를 입은 대상에게
-        [@BUFF_TIME]ID:3575007[@BUFF_TIME]초간 매초 전투력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:357500711,Percent:true[@BUFF][-][/c]추가 피해를 입힌다.<br>파티 영웅은
-        [@BUFF_TIME]ID:3575008[@BUFF_TIME]초간 보스에게 주는 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357500801,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br>크리티컬 크로스
-        <br>지정 위치로 돌진하여 피해를 입히고, 피해를 입은 대상에게 디버프를 부여한다.
-        <br>[c][F7ACA5]#범위피해[-][/c] [c][F7ACA5]#디버프[-][/c]
-        <br>지정 위치로 돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357509012,357509012,357509012[@DMG][-][/c]범위 피해를 입힌다.<br>피해를 입은 적은
-        [@BUFF_TIME]ID:3575010[@BUFF_TIME]초간 매초 전투력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:357501013,Percent:true[@BUFF][-][/c]피해를 입고, 받는 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357501001,Percent:true[@BUFF][-][/c]증가한다.
+        <br>종언의 숨결
+        <br>적 4명에게 피해를 입히고 파티 영웅의 받는 피해를 감소시킨다.
+        <br>[c][74DBBC]#아군보호[-][/c]
+        <br>적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329853012[@DMG][-][/c]범위 피해를 입히고 근접한 적 3명에게 동일한 피해를 전이시킨다.\n첫 피해 대상이 '극약'
+        상태일 경우, 파티 영웅은 [@BUFF_TIME]ID:3298004[@BUFF_TIME]초간 받는 기본/스킬 피해가
+        [c][74DBBC][@BUFF]Category:eStat,ID:329800401,Percent:true[@BUFF][-][/c]감소한다.
+        <br><br>맹독 너울
+        <br>전방 적에게 피해를 입히고 받는 피해를 증가시킨다.
+        <br>[c][F7ACA5]#피해 디버프[-][/c]
+        <br>지정 방향의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329811012[@DMG][-][/c]범위 피해를 입힌다. 피해를 입은 적은
+        [@BUFF_TIME]ID:3298005[@BUFF_TIME]초간 받는 물리 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329800501,Percent:true[@BUFF][-][/c]증가한다.\n피해를 입은 적이 '극약' 상태일 경우,
+        [@BUFF_TIME]ID:3298050[@BUFF_TIME]초간 매초 SP를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329800631,Percent:false[@BUFF][-][/c] 획득한다.
+        <br><br>고통의 잔재
+        <br>모든 적에게 피해를 입히고 받는 최종 피해를 증가시킨다.
+        <br>파티 영웅에게 최대 생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329800851,Percent:true[@BUFF][-][/c]보호막을 부여한다.\n모든 적에게
+        전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329812012[@DMG][@PERDMG][-][/c]피해를 입히고 20초간 주변 업화 속성 적이 받는 최종 피해를
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329800701,Percent:true[@BUFF][-][/c]추가 증가시킨다. (주변 적이 4명 이상일 경우 효과가 2배로 강화되며,
+        바이스(T) 사망 시 제거된다.)
+        <br><br>영원한 동반자
+        <br>지정 범위의 적에게 피해를 입히고 지속 피해 장판을 생성한다.
+        <br>[c][F7ACA5]#적 약화[-][/c]
+        <br>지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다. (최대
+        1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소
         <br><br>기억의 각인
-        <br>[각인]<br>능력 강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105204,Percent:false[@BUFF][-][/c],
-        물리공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105201,Percent:false[@BUFF][-][/c],
-        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105202,Percent:false[@BUFF][-][/c],
-        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105203,Percent:false[@BUFF][-][/c]<br>매초 생명력이 낮은 적 1명에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:357511011[@DMG][@PERDMG][-][/c]피해를 입힌다. (해당 피해는 '신념의 길'에 집계된다.)<br>스킬 사용 시
-        [@BUFF_TIME]ID:3575012[@BUFF_TIME]초간 다음의 효과가 발동된다.<br>- 파티 영웅 : 치명타 확률
-        [c][74DBBC][@BUFF]Category:eStat,ID:357501201,Percent:true[@BUFF][-][/c], 주는 피해
-        [c][74DBBC][@BUFF]Category:eStat,ID:357501202,Percent:true[@BUFF][-][/c]증가 <br>- 카일 : '대가'가 발동하여 받는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357501501,Percent:true[@BUFF][-][/c]증가
-        <br><br>[각인] 페이스 커터
-        <br>돌진하며 적을 끌어모으고 아군이 수호/돌격 저격형 적에게 받는 피해를 감소시킨다.
-        <br>[c][F7ACA5]#모으기[-][/c] [c][74DBBC]#아군보호[-][/c]
-        <br>페이스 커터'가 강화되어 물리 공격력의 [c][F7ACA5][@DMG]ID:357513012[@DMG][-][/c]범위 피해를 입힌다.<br>파티 영웅은 수호/돌격/저격에게 받는 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357501801,Percent:true[@BUFF][-][/c]씩 감소한다. (최대
-        [c][74DBBC][@BUFF]Category:eProperty,ID:357501834,Percent:true[@BUFF][-][/c])
-        <br><br>[각인] 스위핑 소드
-        <br>일정 시간 적을 지속적으로 끌어당긴다.
-        <br>스위핑 소드'가 강화되어 모든 적을 끌어모은 뒤 근접한 적 6명에게 물리 공격력의
-        [c][F7ACA5][@DMG]ID:357515012,357515012,357515012,357515012,357515012,357515012[@DMG][-][/c]범위 피해를 나눠 입힌다.<br>이후
-        [@BUFF_TIME]ID:3575026[@BUFF_TIME]초간 매초 주변 적을 끌어모으며 초당 전투력의 [c][F7ACA5][@DMG]ID:357516012[@DMG][-][/c]추가 피해를
-        입히고, 피해를 입은 적이 [@BUFF_TIME]ID:3575024[@BUFF_TIME]초간 받는 최종 피해를
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502401,Percent:true[@BUFF][-][/c]증가시킨다.
-        <br><br>[각인] 크리티컬 크로스
-        <br>지정 위치로 돌진하여 피해를 입히고, 디버프를 부여하는 공간을 생성한다.
-        <br>[c][F7ACA5]#지속피해[-][/c] [c][F7ACA5]#디버프[-][/c]
-        <br>지정 위치로 돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의
-        효과를 부여하는 공간을 생성한다. (최대 1개)<br>- 매초 전투력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:357502813,Percent:true[@BUFF][-][/c]피해<br>- 받는 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502801,Percent:true[@BUFF][-][/c]증가<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575028[@BUFF_TIME]초간 위 효과가 유지된다.
-        <br><br>셀레스티스 익스큐션
-        <br>지정 방향의 적에게 피해를 입히고, 파티 영웅에게 버프를 부여한다.
-        <br>[c][F7ACA5]#범위피해[-][/c] [c][74DBBC]#파티 강화[-][/c]
-        <br><br>[상시 효과]<br>파티 전체의 [c][F7ACA5]파괴력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504701,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504702,Percent:false[@BUFF][-][/c]증가한다. (무효화 불가)<br><br>[사용 효과]<br>지정 방향의
-        적에게
-        물리 공격력의 [c][F7ACA5][@DMG]ID:357522012[@DMG][-][/c]범위 피해를 입힌다.<br>스킬 사용 후 '구원의 징표'를 15중첩 획득한다.<br><br>[구원의
-        징표]<br>무효화 불가,
-        최대 15중첩<br>'카일'이 스킬 사용 시 1중첩 소모되며, 발동되는 '대가'를 무효화시킨다.<br>중첩이 유지되는 동안 다음의 효과를 부여한다.<br>- 파티 영웅 : 주는 피해
-        [c][74DBBC][@BUFF]Category:eStat,ID:357503801,Percent:true[@BUFF][-][/c]추가 증가<br>- 업화속성 적 : 마법/저격에게 받는 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357504801,Percent:true[@BUFF][-][/c]증가
+        <br>극약 처방'의 효과가 강화된다.
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n\n[각인]\n능력 강화 :
+        생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br><br>[각인] 종언의 숨결
+        <br>적 4명에게 범위 피해를 입히고 파티 영웅의 받는 피해를 감소시킨다.
+        <br>[c][74DBBC]#아군보호[-][/c]
+        <br>종언의 숨결'이 마법 공격력의 [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게
+        [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br><br>[각인] 맹독 너울
+        <br>지정 범위의 적을 모은 뒤 지속적으로 적에게 '극약'을 부여하는 투사체를 생성한다.
+        <br>[c][F7ACA5]#디버프[-][/c]
+        <br>지정 위치의 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여된다.
+        <br><br>[각인] 영원한 동반자
+        <br>저격형 영웅에게 추가 피해 효과를 부여한다.
+        <br><br>[c][F7ACA5]#추가 피해[-][/c]
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329830011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n\n[사용 효과]\n지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를
+        입히고 12초간 '독무리'를 생성한다.
+        <br><br>미혹의 눈
+        <br>모든 적에게 지속 피해를 입히고 디버프를 부여한다.
+        <br>모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329843012[@DMG][-][/c]피해를 입힌다.\n[@BUFF_TIME]ID:3298034[@BUFF_TIME]초간 '마기
+        잠식' 상태가 되어 매초 모든 적에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329844012[@DMG][@PERDMG][-][/c]피해를 입히고, 다음의 효과를 추가로
+        발동시킨다.\n- 적군: 받는 전투력 비례 피해 [c][F7ACA5][@BUFF]Category:eStat,ID:329803501,Percent:true[@BUFF][-][/c]추가 증가\n- 공격력
+        높은 적 1명 : 지속시간 동안 매초 마다 '극약'을 1중첩 획득. 해당 효과를 보유한 적 사망 시 다른 적이 있을 경우 대상에게 이동된다.
         <br><br><br><br>
-        <br><br>신념의 길
-        <br>스킬 사용 시 공격력이 가장 높은 아군 1명은 [@BUFF_TIME]ID:3575001[@BUFF_TIME]초간 주는 치명타 확률이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357500101,Percent:true[@BUFF][-][/c], 주는 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357500102,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br>극약 처방
+        <br>전투 시작 시 공격력이 높은 적 1명에게 '극약' 1중첩을 부여한다.\n5초마다 무작위 적 1명을 중심으로 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329804012[@DMG][-][/c]범위 피해를 입히고, 피해를 입은 적에게 '극약' 1중첩을 부여한다.\n\n'바이스(T)'가 기본공격/스킬을 사용하여 '극약'
+        상태의 적에게 피해를 입히면 파티 영웅의 생명력을 마법 공격력의 [c][74DBBC][@DMG]ID:329806012[@DMG][-][/c]씩 회복시킨다. (재사용 0.5초)\n\n[극약]\n10초
+        유지, 최대 2중첩, 무효화 불가\n- 중첩 당 매초 마법 공격력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800112,Percent:true[@BUFF][-][/c]피해\n- 중첩 당 받는 기본 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329800101,Percent:true[@BUFF][-][/c]추가 증가
         <br><br><br><br>
-        <br><br>[강화I] 크리티컬 크로스
-        <br>[@BUFF_TIME]ID:3575011[@BUFF_TIME]초간 파티 전체가 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357501101,Percent:true[@BUFF][-][/c]감소한다.<br>지정 위치로 돌진하여 물리 공격력의
-        [c][F7ACA5][@DMG]ID:357509012,357509012,357509012[@DMG][-][/c]범위 피해를 입힌다.<br>피해를 입은 적은
-        [@BUFF_TIME]ID:3575010[@BUFF_TIME]초간 매초 전투력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:357501013,Percent:true[@BUFF][-][/c]피해를 입고, 받는 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357501001,Percent:true[@BUFF][-][/c]증가한다.
-        <br><br>[강화II] 크리티컬 크로스
-        <br>[상시 효과]<br>적에게 치명타 피해를 입혔을 때, 피해를 입은 적은 [@BUFF_TIME]ID:3575034[@BUFF_TIME]초간 받는 체이서 피해가
-        [c][F7ACA5][@BUFF]Category:eProperty,ID:357503431,Percent:true[@BUFF][-][/c]증가한다.<br><br>[사용
-        효과]<br>[@BUFF_TIME]ID:3575011[@BUFF_TIME]초간 파티 전체가 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357501101,Percent:true[@BUFF][-][/c]감소한다.<br>지정 위치로 돌진하여 물리 공격력의
-        [c][F7ACA5][@DMG]ID:357509012,357509012,357509012[@DMG][-][/c]범위 피해를 입힌다.<br>피해를 입은 적은
-        [@BUFF_TIME]ID:3575010[@BUFF_TIME]초간 매초 전투력의
-        [c][F7ACA5][@BUFF]Category:eDot,ID:357501013,Percent:true[@BUFF][-][/c]피해를 입고, 받는 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357501001,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br>영원한 동반자
+        <br><br>영원한 동반자
+        <br>지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다. (최대
+        1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소
+        <br><br>영원한 동반자
+        <br>지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다. (최대
+        1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소
+        <br><br>영원한 동반자
+        <br>지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다. (최대
+        1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소
+        <br><br>[강화I] 영원한 동반자
+        <br><br>[강화I] 영원한 동반자
+        <br>[상시 효과]\n주변에 '극약' 상태의 적이 없을 경우, 파티 영웅은 매초 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eDot,ID:329801011,Percent:true[@BUFF][-][/c]씩 생명력을 회복한다. (무효화 불가, '바이스(T)' 사망 시 발동되지
+        않는다.)\n\n[사용 효과]\n지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를
+        생성한다. (최대 1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소
+        <br><br>[강화II] 영원한 동반자
+        <br>[상시 효과]\n주변에 '극약' 상태의 적이 없을 경우, 파티 영웅은 매초 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eDot,ID:329801011,Percent:true[@BUFF][-][/c]씩 생명력을 회복한다. (무효화 불가, '바이스(T)' 사망 시 발동되지
+        않는다.)\n\n[사용 효과]\n지정 위치에 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329814012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를
+        생성한다. (최대 1개)\n'독무리'가 유지되는 동안 다음의 효과가 발동된다.\n- 범위 내 적 : 매초 전투력의
+        [c][F7ACA5][@BUFF]Category:eDot,ID:329800911,Percent:true[@BUFF][-][/c]피해, 파티 영웅에게 주는 모든 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329800932,Percent:true[@BUFF][-][/c]감소\n- 파티 돌격/저격형 영웅 : 주는 최종 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329801301,Percent:true[@BUFF][-][/c]증가
         <br><br><br><br>
-        <br><br>[각인] 크리티컬 크로스
-        <br>[상시 효과]<br>전투 시작 시 파티 영웅은 [@BUFF_TIME]ID:3575050[@BUFF_TIME]초간 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357505001,Percent:true[@BUFF][-][/c]추가 감소한다. (전투 당 1회)<br><br>[사용 효과]<br>지정
-        위치로
-        돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의 효과를 부여하는
-        공간을 생성한다. (최대 1개)<br>- 매초 전투력의 [c][F7ACA5][@BUFF]Category:eDot,ID:357502914,Percent:true[@BUFF][-][/c]피해<br>- 받는
-        피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502901,Percent:true[@BUFF][-][/c]증가<br>- 주는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502903,Percent:true[@BUFF][-][/c]감소<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575029[@BUFF_TIME]초간 위 효과가 유지된다.
-        <br>[상시 효과]<br>전투 시작 시 파티 영웅은 [@BUFF_TIME]ID:3575050[@BUFF_TIME]초간 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357505001,Percent:true[@BUFF][-][/c]추가 감소한다. (전투 당 1회)<br><br>[사용 효과]<br>지정
-        위치로
-        돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의 효과를 부여하는
-        공간을 생성한다. (최대 1개)<br>- 매초 전투력의 [c][F7ACA5][@BUFF]Category:eDot,ID:357502914,Percent:true[@BUFF][-][/c]피해<br>- 받는
-        피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502901,Percent:true[@BUFF][-][/c]증가<br>- 주는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502903,Percent:true[@BUFF][-][/c]감소<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575029[@BUFF_TIME]초간 위 효과가 유지된다.
-        <br>[상시 효과]<br>전투 시작 시 파티 영웅은 [@BUFF_TIME]ID:3575050[@BUFF_TIME]초간 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357505001,Percent:true[@BUFF][-][/c]추가 감소한다. (전투 당 1회)<br><br>[사용 효과]<br>지정
-        위치로
-        돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의 효과를 부여하는
-        공간을 생성한다. (최대 1개)<br>- 매초 전투력의 [c][F7ACA5][@BUFF]Category:eDot,ID:357502914,Percent:true[@BUFF][-][/c]피해<br>- 받는
-        피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502901,Percent:true[@BUFF][-][/c]증가<br>- 주는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502903,Percent:true[@BUFF][-][/c]감소<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575029[@BUFF_TIME]초간 위 효과가 유지된다.
-        <br>[상시 효과]<br>전투 시작 시 파티 영웅은 [@BUFF_TIME]ID:3575050[@BUFF_TIME]초간 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357505001,Percent:true[@BUFF][-][/c]추가 감소한다. (전투 당 1회)<br><br>[사용 효과]<br>지정
-        위치로
-        돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의 효과를 부여하는
-        공간을 생성한다. (최대 1개)<br>- 매초 전투력의 [c][F7ACA5][@BUFF]Category:eDot,ID:357502914,Percent:true[@BUFF][-][/c]피해<br>- 받는
-        피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502901,Percent:true[@BUFF][-][/c]증가<br>- 주는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502903,Percent:true[@BUFF][-][/c]감소<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575029[@BUFF_TIME]초간 위 효과가 유지된다.
-        <br>[상시 효과]<br>전투 시작 시 파티 영웅은 [@BUFF_TIME]ID:3575050[@BUFF_TIME]초간 받는 최종 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357505001,Percent:true[@BUFF][-][/c]추가 감소한다. (전투 당 1회)<br><br>[사용 효과]<br>지정
-        위치로
-        돌진하여 물리 공격력의 [c][F7ACA5][@DMG]ID:357518012,357518012,357518012[@DMG][-][/c]피해를 입히고, 15초간 범위 내 적에게 다음의 효과를 부여하는
-        공간을 생성한다. (최대 1개)<br>- 매초 전투력의 [c][F7ACA5][@BUFF]Category:eDot,ID:357502914,Percent:true[@BUFF][-][/c]피해<br>- 받는
-        피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502901,Percent:true[@BUFF][-][/c]증가<br>- 주는 최종 피해
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357502903,Percent:true[@BUFF][-][/c]감소<br>- 범위 밖으로 벗어난 뒤에도
-        [@BUFF_TIME]ID:3575029[@BUFF_TIME]초간 위 효과가 유지된다.
+        <br><br>기억의 각인
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n파티 영웅은 '극약' 상태의 적에게 피해를 10회 입히면 체이서 자원을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329801831,Percent:false[@BUFF][-][/c]획득한다. (재사용 5초, 각 영웅 집계)\n\n[각인]\n능력
+        강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n파티 영웅은 '극약' 상태의 적에게 피해를 10회 입히면 체이서 자원을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329801831,Percent:false[@BUFF][-][/c]획득한다. (재사용 5초, 각 영웅 집계)\n\n[각인]\n능력
+        강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n파티 영웅은 '극약' 상태의 적에게 피해를 10회 입히면 체이서 자원을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329801831,Percent:false[@BUFF][-][/c]획득한다. (재사용 5초, 각 영웅 집계)\n\n[각인]\n능력
+        강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n파티 영웅은 '극약' 상태의 적에게 피해를 10회 입히면 체이서 자원을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329801831,Percent:false[@BUFF][-][/c]획득한다. (재사용 5초, 각 영웅 집계)\n\n[각인]\n능력
+        강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br>[상시 효과]\n'극약'의 최대 중첩수가 3중첩으로 증가한다.\n파티 영웅은 '극약' 상태의 적에게 피해를 10회 입히면 체이서 자원을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329801831,Percent:false[@BUFF][-][/c]획득한다. (재사용 5초, 각 영웅 집계)\n\n[각인]\n능력
+        강화 : 생명력+[c][74DBBC][@BUFF]Category:eStat,ID:105604,Percent:false[@BUFF][-][/c],
+        마법공격력+[c][74DBBC][@BUFF]Category:eStat,ID:105601,Percent:false[@BUFF][-][/c],
+        물리방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105602,Percent:false[@BUFF][-][/c],
+        마법방어력+[c][74DBBC][@BUFF]Category:eStat,ID:105603,Percent:false[@BUFF][-][/c]\n스킬 극대화 시 다음 '극약 처방'의 피해가 강화되어 최대
+        3명의 적에게 강화된 피해 판정이 나타난다.
+        <br><br>[각인] 종언의 숨결
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.\n\n[사용 효과]\n'종언의 숨결'이 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게 [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대
+        생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.\n\n[사용 효과]\n'종언의 숨결'이 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게 [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대
+        생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.\n\n[사용 효과]\n'종언의 숨결'이 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게 [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대
+        생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.\n\n[사용 효과]\n'종언의 숨결'이 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게 [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대
+        생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.\n\n[사용 효과]\n'종언의 숨결'이 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329854012[@DMG][-][/c]범위 피해를 입히도록 강화된다.\n파티 영웅에게 [@BUFF_TIME]ID:3298040[@BUFF_TIME]초간 최대
+        생명력의 [c][74DBBC][@BUFF]Category:eShield,ID:329804051,Percent:true[@BUFF][-][/c]보호막을 부여하고, 보스에게 받는 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329805301,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br>[상시 효과]\n'극약 처방'의 회복 효과를 10회 발동시키면 파티 전원에게 최대 생명력의
+        [c][74DBBC][@BUFF]Category:eShield,ID:329802451,Percent:true[@BUFF][-][/c]보호막을 부여하고,
+        [@BUFF_TIME]ID:3298025[@BUFF_TIME]초간 보호막을 보유하고 있을 때 받는 피해를
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329802531,Percent:true[@BUFF][-][/c]감소시킨다.
+        <br><br>[각인] 맹독 너울
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치의 적에게 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여되며, [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'모르테'에 피해를 입은 적은
+        [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치의 적에게 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여되며, [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'모르테'에 피해를 입은 적은
+        [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치의 적에게 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여되며, [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'모르테'에 피해를 입은 적은
+        [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치의 적에게 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여되며, [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'모르테'에 피해를 입은 적은
+        [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치의 적에게 마법 공격력의
+        [c][F7ACA5][@DMG]ID:329823012[@DMG][-][/c]피해를 입힌뒤, 중심으로 적을 끌어모으며 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329824012[@DMG][@PERDMG][-][/c]추가 피해를 입힌다.\n이후 해당 위치에 4초간 적을 추적하며 매초 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329826012[@DMG][@PERDMG][-][/c]범위 피해를 입히는 '모르테'를 생성한다. (최대 2개)\n'모르테'에 피해를 입은 적은
+        '극약' 1중첩이 부여되며, [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br>[상시 효과]\n'극약'을 10회 부여할 때마다 [@BUFF_TIME]ID:3298028[@BUFF_TIME]초간 파티 영웅의 [c][F7ACA5]파괴력[-][/c]이
+        [c][74DBBC][@BUFF]Category:eStat,ID:329802801,Percent:false[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n'모르테'에 피해를 입은 적은
+        [@BUFF_TIME]ID:3298027[@BUFF_TIME]초간 저격형에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329802701,Percent:true[@BUFF][-][/c]증가한다.
+        <br><br>[각인] 영원한 동반자
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329831011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n피해를 입은 적은 [@BUFF_TIME]ID:3298032[@BUFF_TIME]초간 '조율'속성에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329803231,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치에 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다.
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329831011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n피해를 입은 적은 [@BUFF_TIME]ID:3298032[@BUFF_TIME]초간 '조율'속성에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329803231,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치에 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다.
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329831011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n피해를 입은 적은 [@BUFF_TIME]ID:3298032[@BUFF_TIME]초간 '조율'속성에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329803231,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치에 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다.
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329831011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n피해를 입은 적은 [@BUFF_TIME]ID:3298032[@BUFF_TIME]초간 '조율'속성에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329803231,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치에 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다.
+        <br>[상시 효과]\n'영원한 동반자' 사용 시 파티 영웅은 [@BUFF_TIME]ID:3298030[@BUFF_TIME]초간 적에게 피해를 입힐 때마다 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329831011[@DMG][@PERDMG][-][/c]추가 피해를 입힌다. 해당 피해는 최대 6명의 적에게 전이된다. (무효화 불가, 재사용 3초,
+        해당 피해는 각 영웅에게 집계된다.)\n피해를 입은 적은 [@BUFF_TIME]ID:3298032[@BUFF_TIME]초간 '조율'속성에게 받는 피해가
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329803231,Percent:true[@BUFF][-][/c]증가한다.\n\n[사용 효과]\n지정 위치에 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329832012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 12초간 '독무리'를 생성한다.
         <br><br><br><br>
+        <br><br>미혹의 눈
+        <br>모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329843012[@DMG][-][/c]피해를 입힌다.\n[@BUFF_TIME]ID:3298034[@BUFF_TIME]초간 '마기
+        잠식' 상태가 되어 매초 모든 적에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329844012[@DMG][@PERDMG][-][/c]피해를 입히고 다음의 효과를 추가로
+        발동시킨다.\n- 적군: 받는 전투력 비례 피해 [c][F7ACA5][@BUFF]Category:eStat,ID:329803501,Percent:true[@BUFF][-][/c]추가 증가\n- 공격력
+        높은 적 1명 : 지속시간 동안 매초 마다 '극약'을 1중첩 획득. 해당 효과를 보유한 적 사망 시 다른 적이 있을 경우 대상에게 이동된다.\n- 지속시간 동안 적이 사망하거나, 피해를 20회 입을
+        때마다 '루팅'을 1중첩 획득한다.\n\n[루팅]\n최대 20중첩, 무효화 불가\n중첩 당 파티 영웅의 [c][F7ACA5]파괴력[-][/c]
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804401,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804402,Percent:false[@BUFF][-][/c]획득
         <br><br>5단계 성장 효과
-        <br>[각인] 스위핑 소드'의 모으기 효과가 '스위핑 소드' 사용 시에도 발동되며, 피해를 입은 적이 [@BUFF_TIME]ID:3575040[@BUFF_TIME]초간 받는 최종 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357504001,Percent:true[@BUFF][-][/c]증가한다.<br><br>파티 전체는 적 4명에게 동시에 피해를 입힐
-        때마다
-        [@BUFF_TIME]ID:3575046[@BUFF_TIME]초간 [c][F7ACA5]파괴력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504601,Percent:false[@BUFF][-][/c]증가한다. (최대
-        [c][74DBBC][@BUFF]Category:eProperty,ID:357504632,Percent:false[@BUFF][-][/c], 재사용 4초)
-        <br><br>[강화] 셀레스티스 익스큐션
-        <br>[상시 효과]<br>전투 시작 시 '구원의 징표'를 15중첩 획득한다.<br>파티 전체의 [c][F7ACA5]파괴력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504401,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]이
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504402,Percent:false[@BUFF][-][/c]증가한다. (무효화 불가)<br><br>[사용 효과]<br>지정 방향의
-        적에게
-        물리 공격력의 [c][F7ACA5][@DMG]ID:357522012[@DMG][-][/c]범위 피해를 입힌다.<br>스킬 사용 후 자신에게 '구원의 징표'를 15중첩 부여한다.<br><br>[구원의
-        징표]<br>무효화 불가, 최대 15중첩<br>'카일'이 스킬 사용 시 1중첩 소모되며, 발동되는 '대가'를 무효화시킨다.<br>중첩이 유지되는 동안 다음의 효과를 부여한다.<br>- 파티 영웅 :
-        주는 피해
-        [c][74DBBC][@BUFF]Category:eStat,ID:357503801,SaintLvBaseID:3162001,Percent:true[@BUFF][-][/c]추가 증가<br>- 업화속성 적
-        :
-        마법/저격에게 받는 피해 [c][F7ACA5][@BUFF]Category:eStat,ID:357504801,SaintLvBaseID:3162001,Percent:true[@BUFF][-][/c]증가
+        <br>영원한 동반자' 사용 시 파티 영웅의 남은 스킬 재사용 시간을
+        [c][74DBBC][@BUFF]Category:eProperty,ID:329805731,Percent:true[@BUFF][-][/c]감소시키고 12초간 파티 영웅에게 다음의 효과를 부여한다.\n-
+        받는 회복량 [c][74DBBC][@BUFF]Category:eStat,ID:329804901,Percent:true[@BUFF][-][/c]증가\n- 영혼 각인/체이서 자원 획득량
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804902,Percent:true[@BUFF][-][/c]증가\n- 밀리는 힘 면역
+        <br><br>[강화] 미혹의 눈
+        <br>모든 적에게 마법 공격력의 [c][F7ACA5][@DMG]ID:329843012[@DMG][-][/c]피해를 입힌다.\n[@BUFF_TIME]ID:3298034[@BUFF_TIME]초간 '마기
+        잠식' 상태가 되어 매초 모든 적에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:329844012[@DMG][@PERDMG][-][/c]피해를 입히고, 다음의 효과를 추가로
+        발동시킨다.\n- 적군: 받는 전투력 비례 피해
+        [c][F7ACA5][@BUFF]Category:eStat,ID:329803501,SaintLvBaseID:2885001,Percent:true[@BUFF][-][/c]추가 증가\n- 공격력 높은 적
+        1명 : 지속시간 동안 매초 마다 '극약'을 1중첩 획득. 해당 효과를 보유한 적 사망 시 다른 적이 있을 경우 대상에게 이동된다.\n- 적 사망 또는 각 대상 20회 공격 시 '루팅'을 1중첩
+        획득\n\n[루팅]\n최대 50중첩, 무효화 불가\n중첩 당 파티 영웅의 [c][F7ACA5]파괴력[-][/c]
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804401,Percent:false[@BUFF][-][/c], [c][74DBBC]수호력[-][/c]
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804402,Percent:false[@BUFF][-][/c]획득\n루팅을 10회 획득할 때마다 파티 영웅을 중심으로 전투력의
+        [c][F7ACA5][@PERDMG][@DMG]ID:329851012[@DMG][@PERDMG][-][/c]범위 피해를 입히고 '극약' 1중첩을 부여하며,
+        [@BUFF_TIME]ID:3298060[@BUFF_TIME]초간 파티 영웅의 물리 공격력을
+        [c][74DBBC][@BUFF]Category:eStat,ID:329806001,Percent:true[@BUFF][-][/c]증가시킨다.
         <br><br>10단계 성장 효과
-        <br>적에게 치명타 피해를 입힐 때마다 [@BUFF_TIME]ID:3575043[@BUFF_TIME]초간 파티 영웅은 수호/돌격형에게 주는 피해가
-        [c][74DBBC][@BUFF]Category:eStat,ID:357504301,Percent:true[@BUFF][-][/c]증가한다.<br><br>'기억의 각인'이 강화되어 매초 생명력이 낮은 적
-        4명에게 전투력의 [c][F7ACA5][@PERDMG][@DMG]ID:357524011[@DMG][@PERDMG][-][/c]피해를 입히고, 3초마다 생명력이 낮은 적 1명에게 전투력의
-        [c][F7ACA5][@PERDMG][@DMG]ID:357527012[@DMG][@PERDMG][-][/c]범위 피해를 추가로 입힌다.<br>피해를 입은 적은
-        [@BUFF_TIME]ID:3575042[@BUFF_TIME]초간 받는 전투력 피해가
-        [c][F7ACA5][@BUFF]Category:eStat,ID:357504201,Percent:true[@BUFF][-][/c]증가한다.
+        <br>파티 영웅의 스킬 재사용 시간을 [c][74DBBC][@BUFF]Category:eStat,ID:329804701,Percent:true[@BUFF][-][/c]감소시킨다.\n업화 속성
+        돌격/수호형 적에게 다음의 효과를 부여한다.\n- 물리 피해를 입을 때
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329805531,Percent:true[@BUFF][-][/c]추가 피해\n- 보호막을 보유한 대상에게 받는 피해
+        [c][F7ACA5][@BUFF]Category:eProperty,ID:329805532,Percent:true[@BUFF][-][/c]증가\n\n15초 마다 생명력이 낮은 파티 영웅 위치에 10초간
+        유지되는 은신 영역을 생성해 범위 내 아군이 받는 최종 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329804501,Percent:true[@BUFF][-][/c]감소시킨다.\n파티 영웅의 생명력이 20%이하로 감소했을 때 대상의
+        생명력을 [c][74DBBC][@BUFF]Category:eDot,ID:329804611,Percent:true[@BUFF][-][/c] 회복시킨 뒤
+        [@BUFF_TIME]ID:3298046[@BUFF_TIME]초간 대상이 받는 피해를 무시하고, 해당 위치에 은신 영역을 추가로 생성한다. (재사용 60초, 각 영웅 별 집계)
         <br><br><br><br>
-
-
-
-
-
 
 
     </div>
     <div id="text1" style="background-color:#3D3D3D; color:#EEEEEE;">
         <h2>Pet</h2>
         <br><br>기본 공격
-        <br>근접한 적에게 피해를 입힌다.
-        <br>근접한 적에게 물리 공격력의 [c][F7ACA5][@DMG]ID:357601012[@DMG][-][/c]피해를 입힌다.
-        <br><br>스크래치 메이커
-        <br>근접한 적에게 피해를 입히고 주변 적 수에 비례하여 아군에게 버프를 부여한다.
-        <br>근접한 적 1명에게 물리 공격력의 [c][F7ACA5][@DMG]ID:357602011[@DMG][-][/c]피해를 입힌다.<br>파티 '조율'속성 영웅은
-        [@BUFF_TIME]ID:3576001[@BUFF_TIME]초간 기본/스킬로 적에게 피해를 입히면 '근접한 적 인원수' x
-        [c][74DBBC][@BUFF]Category:eProperty,ID:357600131,Percent:true[@BUFF][-][/c]만큼 추가 피해를 입힌다. (최대
-        [c][74DBBC][@BUFF]Category:eProperty,ID:357600133,Percent:true[@BUFF][-][/c])
+        <br>근접한 적 1명에게 피해를 입힌다.
+        <br>근접한 적 1명에게 마법공격력의 [c][F7ACA5][@DMG]ID:329901014[@DMG][-][/c]피해를 입힌다.
+        <br><br>강화 인분
+        <br>파티 영웅의 생명력을 회복 시킨다.
+        <br>조율 속성 파티 영웅의 생명력을 마법 공격력의 [c][74DBBC][@DMG]ID:329902012[@DMG][-][/c]만큼 회복시키고,
+        [@BUFF_TIME]ID:3299001[@BUFF_TIME]초간 주는 치명타 피해를
+        [c][74DBBC][@BUFF]Category:eStat,ID:329900101,Percent:true[@BUFF][-][/c]증가시킨다.
+
     </div>
     <script>
         function R(text) {
